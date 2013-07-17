@@ -53,6 +53,9 @@
 	font-size: 24px;
 	font-weight: 700;
 }
+.tut-nav ul li.active a {
+	color: #404040;
+}
 .tut-nav ul li a:hover,
 .tut-nav ul li a.active {
 	color: #404040;
@@ -83,6 +86,10 @@
 	padding: 0;
 	margin: -284px 0 0 -160px;
 	background: #fff;
+	display: none;
+}
+.tut-area .tut-area-device div.active {
+	display: block;
 }
 .tut-area .tut-area-device div img {}
 
@@ -94,7 +101,12 @@
 .tut-info .tut-info-inner {
 	margin: 100px 0 0;
 }
-.tut-info .tut-info-inner div {}
+.tut-info .tut-info-inner div {
+	display: none;
+}
+.tut-info .tut-info-inner div.active {
+	display: block;
+}
 .tut-info .tut-info-inner div h4 {
 	font-size: 24px;
 	line-height: 4em;

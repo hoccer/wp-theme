@@ -68,71 +68,7 @@
 			</div>
 		</div>
 		<!-- Hoccer XO Tutorial -->
-		<div class="tutorial-outside" id="tutorial-xo">
-			<div class="tutorial-inside inner">
-				<div class="tut-nav">
-					<ul>
-					<li><img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-0.png" alt="" /><a class="tut-0"><?php _e('Conversation','hoccer'); ?></a></li>
-					<li><img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-1.png" alt="" /><a class="tut-1"><?php _e('Chat','hoccer'); ?></a></li>
-					<li><img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-2.png" alt="" /><a class="tut-2"><?php _e('Contacts','hoccer'); ?></a></li>
-					<li><img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-3.png" alt="" /><a class="tut-3"><?php _e('Group','hoccer'); ?></a></li>
-					<li><img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-4.png" alt="" /><a class="tut-4"><?php _e('Profile','hoccer'); ?></a></li>
-					<li><img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-5.png" alt="" /><a class="tut-5"><?php _e('Settings','hoccer'); ?></a></li>
-					</ul>
-				</div>
-				<div class="tut-area">
-					<div class="tut-area-device">
-						<div class="tut-img-0 tut-cnt-0">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-img-0.png" />
-						</div>
-						<div class="tut-img-1 tut-cnt-1">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-img-1.png" />
-						</div>
-						<div class="tut-img-2 tut-cnt-2">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-img-2.png" />
-						</div>
-						<div class="tut-img-3 tut-cnt-3">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-img-3.png" />
-						</div>
-						<div class="tut-img-4 tut-cnt-4">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-img-4.png" />
-						</div>
-						<div class="tut-img-5 tut-cnt-5">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-img-5.png" />
-						</div>
-					</div>
-				</div>
-				<div class="tut-info">
-					<div class="tut-info-inner">
-						<div class="tut-info-0 tut-cnt-0">
-							<h4><?php _e('Some Info Headline','hoccer'); ?></h4>
-							<p><?php _e('Some Info Text.','hoccer'); ?></p>
-						</div>
-						<div class="tut-info-1 tut-cnt-1">
-							<h4><?php _e('Some Info Headline','hoccer'); ?></h4>
-							<p><?php _e('Some Info Text','hoccer'); ?></p>
-						</div>
-						<div class="tut-info-2 tut-cnt-2">
-							<h4><?php _e('Some Info Headline','hoccer'); ?></h4>
-							<p><?php _e('Some Info Text','hoccer'); ?></p>
-						</div>
-						<div class="tut-info-3 tut-cnt-3">
-							<h4><?php _e('Some Info Headline','hoccer'); ?></h4>
-							<p><?php _e('Some Info Text','hoccer'); ?></p>
-						</div>
-						<div class="tut-info-4 tut-cnt-4">
-							<h4><?php _e('Some Info Headline','hoccer'); ?></h4>
-							<p><?php _e('Some Info Text','hoccer'); ?></p>
-						</div>
-						<div class="tut-info-5 tut-cnt-5">
-							<h4><?php _e('Some Info Headline','hoccer'); ?></h4>
-							<p><?php _e('Some Info Text','hoccer'); ?></p>
-						</div>
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
+		<?php // include('tutorial.php'); ?>
 		<!-- Hoccer Teaser -->
 		<div id="panorama-2" class="intro-outside panorama-2">
 			<div class="intro-inside">
