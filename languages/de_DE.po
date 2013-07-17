@@ -1,0 +1,201 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hoccer 2013 v2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-06-26 14:35:36+0000\n"
+"Last-Translator: zutrinken <peter@hoccer.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: front-page.php:76
+#@ hoccer
+msgid "Conversation"
+msgstr ""
+
+#: front-page.php:77
+#@ hoccer
+msgid "Chat"
+msgstr ""
+
+#: front-page.php:78
+#@ hoccer
+msgid "Contacts"
+msgstr ""
+
+#: front-page.php:79
+#@ hoccer
+msgid "Group"
+msgstr ""
+
+#: front-page.php:80
+#@ hoccer
+msgid "Profile"
+msgstr ""
+
+#: front-page.php:81
+#@ hoccer
+msgid "Settings"
+msgstr ""
+
+#: front-page.php:109
+#: front-page.php:113
+#: front-page.php:117
+#: front-page.php:121
+#: front-page.php:125
+#: front-page.php:129
+#@ hoccer
+msgid "Some Info Headline"
+msgstr ""
+
+#: front-page.php:114
+#: front-page.php:118
+#: front-page.php:122
+#: front-page.php:126
+#: front-page.php:130
+#@ hoccer
+msgid "Some Info Text"
+msgstr ""
+
+#: functions.php:53
+#@ hoccer
+msgid "Top Navigation"
+msgstr ""
+
+#: functions.php:54
+#@ hoccer
+msgid "Footer Navigation"
+msgstr ""
+
+#: functions.php:62
+#@ hoccer
+msgid "Start"
+msgstr ""
+
+#: front-page.php:142
+#@ hoccer
+msgid "Data Sharing simplified"
+msgstr "Teilen leicht gemacht"
+
+#: front-page.php:213
+#@ hoccer
+msgid "Drag"
+msgstr "Ziehen"
+
+#: front-page.php:224
+#@ hoccer
+msgid "Channel"
+msgstr "Channel"
+
+#: front-page.php:229
+#@ hoccer
+msgid "Security"
+msgstr "Sicherheit"
+
+#: front-page.php:203
+#@ hoccer
+msgid "Throw"
+msgstr "Werfen"
+
+#: front-page.php:208
+#@ hoccer
+msgid "Catch"
+msgstr "Fangen"
+
+#: front-page.php:218
+#@ hoccer
+msgid "Auto-Receive"
+msgstr "Auto-Empfangen"
+
+#: front-page.php:9
+#@ hoccer
+msgid "Share hugs &amp; kisses"
+msgstr ""
+
+#: front-page.php:43
+#@ hoccer
+msgid "Your free Messenger App"
+msgstr "Deine kostenlose Nachrichten-App"
+
+#: front-page.php:171
+#@ hoccer
+msgid "Gestured controlled content sharing"
+msgstr "Mit Gesten gesteuertes teilen von Inhalten"
+
+#: front-page.php:173
+#@ hoccer
+msgid "Share your files between mobile and other computing devices. HOCCER is an app for fast, easy and secure file transfer and data exchange. Share any media or other content instantly between all mobile devices – without any setup."
+msgstr "Teile deine Dateien zwischen mobilen und anderen Geräten. HOCCER CLASSIC ist eine kostenlose App für schnellen, einfachen und sicheren Datenaustausch. Teile alle Medien- oder andere Inhalte direkt  - ohne Registrierung oder Set-up!"
+
+#: front-page.php:176
+#@ hoccer
+msgid "Use gestures to control the app. “Swipe” between two devices or “throw\" and \"catch”. Furthermore, with our <a href=\"http://hocc.it\" title=\"Hoccer WebApp\">WebApp</a> you are able to exchange content between your mobile device and your computer."
+msgstr "Nutze intuitive Gesten um die App zu steuern. \"Ziehe\"- zwischen den Geräten, oder \"werfe\" und „fange“ die ausgewählten Dateien. Zudem ermöglicht unsere WebApp dir, Dateien zwischen deinen mobilen Geräten und deinem Computer auszutauschen."
+
+#: front-page.php:204
+#@ hoccer
+msgid "Move your mobile like throwing a frisbee to share selected content with catchers nearby."
+msgstr "Bewege dein Smartphone so als würdest du eine Frisbee werfen- um ausgewählte Inhalt mit Leuten in deiner Nähe zu teilen."
+
+#: front-page.php:214
+#@ hoccer
+msgid "In order to share with one person directly, place your mobiles screen to screen and drag the content from one screen to the other mobile."
+msgstr "Um mit nur einer Person direkt zu teilen bzw. Dateien auszutauschen, platziere die Smartphones nebeneinander und ziehe den Inhalt von einem auf das andere Display."
+
+#: front-page.php:219
+#@ hoccer
+msgid "Hoccer will now automatically \"catch\" any thrown data if you pull down the handle below the application title bar."
+msgstr "HOCCER empfängt automatisch jeden geworfenen Inhalt wenn du den Griff unter der Titelleiste runterziehst."
+
+#: front-page.php:110
+#@ hoccer
+msgid "Some Info Text."
+msgstr ""
+
+#: front-page.php:209
+#@ hoccer
+msgid "To catch thrown content, raise your mobile quickly from horizontally to vertical position."
+msgstr "Um geworfene Inhalte zu fangen, hebe dein Smartphone zügig aus einer waagerechten in eine senkrechte Position."
+
+#: front-page.php:225
+#@ hoccer
+msgid "Create a channel to share content with people over a distance. Enter the same channel name and use auto receive."
+msgstr "Erstelle einen Kanal um Dateien über eine weite Entfernung zu teilen. Wähle denselben Kanal Namen und aktiviere \"Automatisches Empfangen\"."
+
+#: front-page.php:230
+#@ hoccer
+msgid "You can restrict communication to one or more partners. Partners with active end-to-end encryption are marked with a key symbol."
+msgstr "Du kannst das Teilen auf bestimmte Partner begrenzen. Partner mit aktiver Ende- zu -Ende Verschlüsselung sind mit einem Schlüsselsymbol gekennzeichnet."
+
+#: front-page.php:45
+#@ hoccer
+msgid "Your free messenger app! Unlimted data transfer – safe, reliable and fast. Hoccer XO is your personal messenger service. Share text, photos, videos, contacts and places. Protecting your privacy is our highest priority. Your messages are protected using end-to-end encryption."
+msgstr "Deine kostenlose Messenger App! Unbegrenzter Datentransfer – sicher, zuverlässig und schnell Hoccer XO ist dein persönlicher Dienst zur Übermittlung von Texten, Bildern, Audio, Video, Adressen und Standorten, die du mit deinen Freunden und Bekannten austauschen möchtest. Der Schutz deiner Privatsphäre steht hierbei im Mittelpunkt. Deine Nachrichten sind vom Sender bis zum Empfänger verschlüsselt."
+
+#: front-page.php:48
+#@ hoccer
+msgid "Hoccer XO is more secure than most other messaging services. Even we at Hoccer can not read your messages. Your contacts and phone numbers stay with you. We don&#39;t need or want them."
+msgstr "Hoccer XO bietet damit einen Sicherheitsvorteil gegenüber vielen anderen Messenger Diensten. Auch wir bei Hoccer können deine Nachrichten nicht lesen. Deine Kontakte und Telefonbucheintragungen verbleiben ebenfalls bei dir und können von uns weder genutzt noch eingesehen werden."
+
+#: front-page.php:49
+#@ hoccer
+msgid "Our Privacy & Security Statement"
+msgstr "Datenschutz- & Sicherheitserklärung"
+
+#: front-page.php:10
+#@ hoccer
+msgid "available soon"
+msgstr "bald erhältlich"
+
