@@ -6,7 +6,7 @@
 		var tut = $('.tut');
 		tut.click(function() {
 			var coco = $(this).attr('class').split(' ')[1];
-			if(!$(this).hasClass('active')) {
+			if(!$(this).hasClass('active')) {				
 				tut.not('.tut-nav .tut').hide();
 				tut.removeClass('active');
 				$(this).addClass('active');

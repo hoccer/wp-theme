@@ -4,7 +4,7 @@
 }
 .tut-nav ul {
 	padding: 0;
-	margin: 100px 0 0;
+	margin: 72px 0 0;
 	list-style: none;
 }
 .tut-nav ul li {
@@ -44,8 +44,8 @@
 	display: block;
 
 	width: 100%;
-	height: 4em;
-	line-height: 4em;
+	height: 96px;
+	line-height: 96px;
 	
 	margin: 0;
 	
@@ -91,7 +91,13 @@
 .tut-area .tut-area-device div.active {
 	display: block;
 }
-.tut-area .tut-area-device div img {}
+.tut-area .tut-area-device div img {
+	width: auto;
+	max-width: none;
+	height: 100%;
+	float: right;
+	clear: both;
+}
 
 	
 .tut-info {
@@ -99,7 +105,7 @@
 	width: 31.333%;
 }
 .tut-info .tut-info-inner {
-	margin: 100px 0 0;
+	margin: 72px 0 0;
 }
 .tut-info .tut-info-inner div {
 	display: none;
@@ -109,7 +115,7 @@
 }
 .tut-info .tut-info-inner div h4 {
 	font-size: 24px;
-	line-height: 4em;
+	line-height: 96px;
 	font-weight: 700;
 	color: #404040;
 	
@@ -118,5 +124,7 @@
 }
 .tut-info .tut-info-inner div p {
 	color: #808080;
+	font-size: 18px;
+	line-height: 27px;
 	margin: 0 0 1em;
 }

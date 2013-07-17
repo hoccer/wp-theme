@@ -68,7 +68,7 @@
 			</div>
 		</div>
 		<!-- Hoccer XO Tutorial -->
-		<?php // include('tutorial.php'); ?>
+		<?php include('tutorial.php'); ?>
 		<!-- Hoccer Teaser -->
 		<div id="panorama-2" class="intro-outside panorama-2">
 			<div class="intro-inside">
