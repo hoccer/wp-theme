@@ -1,7 +1,33 @@
 (function ($, document, window) {
 	$(document).ready(function () {
-		/* Responsive Youtube/Vimeo Videos */
-		$('.article').fitVids();
+
+		/* Parallax for Panorama Images */
+		$(window).scroll(parallaxScroll);
+		function parallaxScroll(){
+			var scrolled = $(window).scrollTop();
+			scrolled = Math.round(scrolled);
+			$('.panorama-1').css({
+				'background-position' : 'center ' + (0+(scrolled*.4))+'px'
+			});
+			
+			$('.intro-image').css({
+				'bottom' : (0-(scrolled*.2))+'px'
+			});
+			
+			var y = $('#panorama-2').offset().top;
+			y = Math.round(y);
+			if(scrolled >= y) {
+				$('.panorama-2').css({		
+					'background-position' : 'center ' + (0+((scrolled - y) * .4))+'px'
+				});
+			} else {
+				$('.panorama-2').css({		
+					'background-position' : 'center ' + 0
+				});
+			}
+		}
+
+		/* Tutorial Image Switscher */
 		$('.tut-0').addClass('active');
 		var tut = $('.tut');
 		tut.click(function() {
@@ -16,6 +42,11 @@
 				});
 			}
 		});
+		
+		/* Responsive Youtube/Vimeo Videos */
+		$('.article').fitVids();
+		
+		/* Video Layer */
 		$('.video-frame').click(function() {
 			$('.video-layer').hide();
 		});
