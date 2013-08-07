@@ -77,7 +77,7 @@
 							<p><?php _e('Inside the profile (your own and of your friends) your fingerprints are displayed. Compare your own fingerprint with those on your friends device to check your identity.','hoccer'); ?></p>
 						</div>
 						<div class="tut tut-6">
-							<h4><?php _e('Some Info Headline','hoccer'); ?></h4>
+							<h4><?php _e('Settings','hoccer'); ?></h4>
 							<p><?php _e('With Hoccer XO you have full control about the size and loading behavior of your out- and incoming media to reduce your traffic.','hoccer'); ?></p>
 						</div>
 					</div>
