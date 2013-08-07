@@ -14,25 +14,6 @@
 	cursor: pointer;
 	position: relative;
 }
-.tut-nav ul li img {
-	position: absolute;
-	display: block;
-	top: 50%;
-	left: -64px;
-
-	width: 48px;
-	height: 48px;
-
-	margin: -24px 0 0;
-	z-index: 1000;
-
-	filter:alpha(opacity=50);
-	-khtml-opacity: 0.5;
-	-moz-opacity: 0.5;
-	opacity: 0.5;
-	
-	display: none !important;
-}
 .tut-nav ul li:hover img,
 .tut-nav ul li.active img {
 	filter:alpha(opacity=100);

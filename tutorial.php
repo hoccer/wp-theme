@@ -3,31 +3,24 @@
 				<div class="tut-nav">
 					<ul>
 						<li class="tut tut-0">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-0.png" alt="" />
 							<a><?php _e('Conversations','hoccer'); ?></a>
 						</li>
 						<li class="tut tut-1">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-1.png" alt="" />
 							<a><?php _e('Navigation','hoccer'); ?></a>
 						</li>
 						<li class="tut tut-2">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-2.png" alt="" />
 							<a><?php _e('Contact Menu','hoccer'); ?></a>
 						</li>
 						<li class="tut tut-3">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-3.png" alt="" />
 							<a><?php _e('Groups','hoccer'); ?></a>
 						</li>
 						<li class="tut tut-4">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-3.png" alt="" />
 							<a><?php _e('Attachments','hoccer'); ?></a>
 						</li>
 						<li class="tut tut-5">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-4.png" alt="" />
 							<a><?php _e('Security','hoccer'); ?></a>
 						</li>
 						<li class="tut tut-6">
-							<img src="<?php echo $templatepath; ?>/images/tutorial/tut-icon-5.png" alt="" />
 							<a><?php _e('Settings','hoccer'); ?></a>
 						</li>
 					</ul>
