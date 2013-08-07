@@ -25,6 +25,12 @@
 					'background-position' : 'center ' + 0
 				});
 			}
+			var tutAreaY = $('.tut-area').offset().top;
+			tutAreaY = Math.round(tutAreaY);
+			$('.tut-area').css({
+					'position'	: 'relative',
+					'top'		: (0-((scrolled - tutAreaY) * .15))+'px'
+				});
 		}
 
 		/* Tutorial Image Switscher */
