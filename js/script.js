@@ -1,9 +1,9 @@
 (function ($, document, window) {
 	$(document).ready(function () {
 
-		/* Parallax for Panorama Images */
 		$(window).scroll(parallaxScroll);
-		function parallaxScroll(){
+		/* Parallax for Panorama Images */
+		function parallaxScroll() {
 			var scrolled = $(window).scrollTop();
 			scrolled = Math.round(scrolled);
 			$('.panorama-1').css({
@@ -28,9 +28,9 @@
 			var tutAreaY = $('.tut-area').offset().top;
 			tutAreaY = Math.round(tutAreaY);
 			$('.tut-area').css({
-					'position'	: 'relative',
-					'top'		: (0-((scrolled - tutAreaY) * .15))+'px'
-				});
+				'position'	: 'relative',
+				'top'		: (0-((scrolled - tutAreaY) * .15))+'px'
+			});
 		}
 
 		/* Tutorial Image Switscher */

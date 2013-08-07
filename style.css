@@ -726,9 +726,17 @@ body {
 	#panorama-1 {
 		margin: 4em auto 0;
 		background-size: auto 100%;
+		background-position: center top !important;
 	}
 	#panorama-2 {
 		background-size: auto 100%;
+		background-position: center top !important;
+	}
+	.intro-image {
+		bottom: 0 !important;
+	}
+	.tut-area {
+		top: auto !important;
 	}
 }
 @media only screen and (max-width: 48em) {

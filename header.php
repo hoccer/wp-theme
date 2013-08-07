@@ -1,23 +1,27 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-
 	<head profile="http://gmpg.org/xfn/11">
 		<title><?php bloginfo('name'); ?> <?php wp_title(' - ', true, 'left'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 		<meta name="description" content="<?php bloginfo('description'); ?>" />
 		<meta name="author" content="Peter Amende" />
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" media="screen" />
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/tutorial.css" media="screen" />
-		
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel='canonical' href='<?php bloginfo('url'); ?>' />
 		<link rel='index' title='<?php bloginfo('description'); ?>' href='<?php bloginfo('url'); ?>' />
-
+		<?php $detect = new Mobile_Detect(); ?>
+		<?php if($detect->isTablet() && is_front_page()) : ?>
+			<style type="text/css">
+				#panorama-1 {background-position: center top !important;}
+				#panorama-2 {background-position: center top !important;}
+				.intro-image {bottom: 0 !important;}
+				.tut-area {top: auto !important;}
+			</style>
+		<?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
-
 	<body <?php body_class(); ?>>
 		<div id="header">
 			<header class="inner">
