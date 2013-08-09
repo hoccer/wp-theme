@@ -542,6 +542,37 @@ body {
 }
 
 
+
+
+#header-teaser {
+	background:	#404040 scroll repeat-x center top;
+	background-size: 100% auto;
+	overflow: hidden;
+	height: 0;
+	padding: 0 0 25%;
+	margin: 0 auto;
+	position: relative;
+}
+#header-teaser-outside {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	
+	background: rgba(255,255,255,0.25);
+	border-top: 1px solid rgba(255,255,255,0.1);
+	z-index: 100;
+}
+#header-teaser-inside {}
+
+#header-teaser .post-title {
+	font-size: 2.5em;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
+
+
+
 	  /* ================= */
 	 /* === FRONTPAGE === */
 	/* ================= */
@@ -738,6 +769,10 @@ body {
 	.tut-area {
 		top: auto !important;
 	}
+	#header-teaser {
+		margin: 4em auto 0;
+		background-position: center top !important;
+	}
 }
 @media only screen and (max-width: 48em) {
 	#panorama-1,
@@ -804,6 +839,9 @@ body {
 	}
 	#header {
 		position: static;
+	}
+	#header-teaser {
+		margin: 0 auto;
 	}
 	#logo {
 		height: 1em;

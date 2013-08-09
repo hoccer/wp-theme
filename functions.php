@@ -14,10 +14,8 @@ function enqueue_scripts() {
 	wp_register_script('jquery-custom', $template.'/js/libs/jquery.1.7.1.min.js', array(), null, false);
 	wp_enqueue_script('jquery-custom');
 
-	if(is_front_page()) {
-		wp_enqueue_script('jquery.fitvids', $template.'/js/libs/jquery.fitvids.js', array(), null, false);
-		wp_enqueue_script('custom-script', $template.'/js/script.js', array(), null, true);
-	}
+	wp_enqueue_script('jquery.fitvids', $template.'/js/libs/jquery.fitvids.js', array(), null, false);
+	wp_enqueue_script('custom-script', $template.'/js/script.js', array(), null, true);
 }
 
 /* Load Google Web Fonts */

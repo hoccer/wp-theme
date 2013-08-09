@@ -9,12 +9,15 @@
 			$('.panorama-1').css({
 				'background-position' : 'center ' + (0+(scrolled*.4))+'px'
 			});
+			$('#header-teaser').css({
+				'background-position' : 'center ' + (0+(scrolled*.4))+'px'
+			});
 			
 			$('.intro-image').css({
 				'bottom' : (0-(scrolled*.2))+'px'
 			});
 			
-			var y = $('#panorama-2').offset().top;
+			var y = $('.panorama-2').offset().top;
 			y = Math.round(y);
 			if(scrolled >= y) {
 				$('.panorama-2').css({		
