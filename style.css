@@ -838,7 +838,10 @@ body {
 		margin-right: 0;
 	}
 	#header {
-		position: static;
+		position: relative;
+	}
+	#wrapper {
+		overflow: auto;
 	}
 	#header-teaser {
 		margin: 0 auto;
@@ -886,6 +889,16 @@ body {
 	}
 	.download-platform .button {
 		margin: 0.5em auto;
+	}
+	#header-teaser {
+		margin: 0 auto;
+		padding: 0;
+		height: 10em;
+		background-size: auto 100%;
+	}
+	#header-teaser .post-title {
+		font-size: 2em;
+		margin: 0.5em 0;
 	}
 }
 
