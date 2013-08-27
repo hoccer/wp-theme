@@ -1,6 +1,7 @@
 <?php
 
 /* load theme options */
+include 'inc/theme-options.php';
 $options = get_option('hoccer_theme_options');
 
 load_theme_textdomain('hoccer', TEMPLATEPATH .'/languages');

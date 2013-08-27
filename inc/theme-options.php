@@ -40,8 +40,8 @@ function hoccer_theme_options_page() {
 				<tr valign="top">
 					<th scope="row"><?php _e('Hoccer XO Demo','hoccer'); ?></th>
 					<td>
-						<label for="hoccer_theme_options[submenu-show]">
-							<input id="hoccer_theme_options[xo-demo-show]" type="checkbox" name="hoccer_theme_options[xo-demo-show]" value="0" <?php checked( '0', $options['xo-demo-show'] ); ?> /> <?php _e('show','hoccer'); ?> <span class="description"><?php _e('iPhone with Hoccer XO Screenshots','hoccer'); ?></span></td>
+						<label for="hoccer_theme_options[xo-demo-show]">
+							<input id="hoccer_theme_options[xo-demo-show]" type="checkbox" name="hoccer_theme_options[xo-demo-show]" value="1" <?php checked( '1', $options['xo-demo-show'] ); ?> /> <?php _e('show','hoccer'); ?> <span class="description"><?php _e('iPhone with Hoccer XO Screenshots','hoccer'); ?></span></td>
 						</label>
 					</td>
 				</tr>
