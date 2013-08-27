@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hoccer 2013 v2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-08-07 17:26:39+0000\n"
+"PO-Revision-Date: 2013-08-27 19:06:26+0000\n"
 "Last-Translator: zutrinken <peter@hoccer.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,124 +26,124 @@ msgstr ""
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: functions.php:55
+#: functions.php:54
 #@ hoccer
 msgid "Top Navigation"
 msgstr ""
 
-#: functions.php:56
+#: functions.php:55
 #@ hoccer
 msgid "Footer Navigation"
 msgstr ""
 
-#: functions.php:64
+#: functions.php:62
 #@ hoccer
 msgid "Start"
 msgstr ""
 
-#: front-page.php:77
+#: front-page.php:80
 #@ hoccer
 msgid "Data Sharing simplified"
 msgstr "Teilen leicht gemacht"
 
-#: front-page.php:148
+#: front-page.php:151
 #@ hoccer
 msgid "Drag"
 msgstr "Ziehen"
 
-#: front-page.php:159
+#: front-page.php:162
 #@ hoccer
 msgid "Channel"
 msgstr "Channel"
 
-#: front-page.php:164
+#: front-page.php:167
 #: tutorial.php:21
 #: tutorial.php:76
 #@ hoccer
 msgid "Security"
 msgstr "Sicherheit"
 
-#: front-page.php:138
+#: front-page.php:141
 #@ hoccer
 msgid "Throw"
 msgstr "Werfen"
 
-#: front-page.php:143
+#: front-page.php:146
 #@ hoccer
 msgid "Catch"
 msgstr "Fangen"
 
-#: front-page.php:153
+#: front-page.php:156
 #@ hoccer
 msgid "Auto-Receive"
 msgstr "Auto-Empfangen"
 
-#: front-page.php:9
+#: front-page.php:10
 #@ hoccer
 msgid "Share hugs &amp; kisses"
 msgstr ""
 
-#: front-page.php:42
+#: front-page.php:43
 #@ hoccer
 msgid "Your free Messenger App"
 msgstr "Deine kostenlose Nachrichten-App"
 
-#: front-page.php:106
+#: front-page.php:109
 #@ hoccer
 msgid "Gestured controlled content sharing"
 msgstr "Mit Gesten gesteuertes teilen von Inhalten"
 
-#: front-page.php:108
+#: front-page.php:111
 #@ hoccer
 msgid "Share your files between mobile and other computing devices. HOCCER is an app for fast, easy and secure file transfer and data exchange. Share any media or other content instantly between all mobile devices – without any setup."
 msgstr "Teile deine Dateien zwischen mobilen und anderen Geräten. HOCCER CLASSIC ist eine kostenlose App für schnellen, einfachen und sicheren Datenaustausch. Teile alle Medien- oder andere Inhalte direkt  - ohne Registrierung oder Set-up!"
 
-#: front-page.php:111
+#: front-page.php:114
 #@ hoccer
 msgid "Use gestures to control the app. “Swipe” between two devices or “throw\" and \"catch”. Furthermore, with our <a href=\"http://hocc.it\" title=\"Hoccer WebApp\">WebApp</a> you are able to exchange content between your mobile device and your computer."
 msgstr "Nutze intuitive Gesten um die App zu steuern. \"Ziehe\"- zwischen den Geräten, oder \"werfe\" und „fange“ die ausgewählten Dateien. Zudem ermöglicht unsere WebApp dir, Dateien zwischen deinen mobilen Geräten und deinem Computer auszutauschen."
 
-#: front-page.php:139
+#: front-page.php:142
 #@ hoccer
 msgid "Move your mobile like throwing a frisbee to share selected content with catchers nearby."
 msgstr "Bewege dein Smartphone so als würdest du eine Frisbee werfen- um ausgewählte Inhalt mit Leuten in deiner Nähe zu teilen."
 
-#: front-page.php:149
+#: front-page.php:152
 #@ hoccer
 msgid "In order to share with one person directly, place your mobiles screen to screen and drag the content from one screen to the other mobile."
 msgstr "Um mit nur einer Person direkt zu teilen bzw. Dateien auszutauschen, platziere die Smartphones nebeneinander und ziehe den Inhalt von einem auf das andere Display."
 
-#: front-page.php:154
+#: front-page.php:157
 #@ hoccer
 msgid "Hoccer will now automatically \"catch\" any thrown data if you pull down the handle below the application title bar."
 msgstr "HOCCER empfängt automatisch jeden geworfenen Inhalt wenn du den Griff unter der Titelleiste runterziehst."
 
-#: front-page.php:144
+#: front-page.php:147
 #@ hoccer
 msgid "To catch thrown content, raise your mobile quickly from horizontally to vertical position."
 msgstr "Um geworfene Inhalte zu fangen, hebe dein Smartphone zügig aus einer waagerechten in eine senkrechte Position."
 
-#: front-page.php:160
+#: front-page.php:163
 #@ hoccer
 msgid "Create a channel to share content with people over a distance. Enter the same channel name and use auto receive."
 msgstr "Erstelle einen Kanal um Dateien über eine weite Entfernung zu teilen. Wähle denselben Kanal Namen und aktiviere \"Automatisches Empfangen\"."
 
-#: front-page.php:165
+#: front-page.php:168
 #@ hoccer
 msgid "You can restrict communication to one or more partners. Partners with active end-to-end encryption are marked with a key symbol."
 msgstr "Du kannst das Teilen auf bestimmte Partner begrenzen. Partner mit aktiver Ende- zu -Ende Verschlüsselung sind mit einem Schlüsselsymbol gekennzeichnet."
 
-#: front-page.php:44
+#: front-page.php:45
 #@ hoccer
 msgid "Your free messenger app! Unlimted data transfer – safe, reliable and fast. Hoccer XO is your personal messenger service. Share text, photos, videos, contacts and places. Protecting your privacy is our highest priority. Your messages are protected using end-to-end encryption."
 msgstr "Deine kostenlose Messenger App! Unbegrenzter Datentransfer – sicher, zuverlässig und schnell Hoccer XO ist dein persönlicher Dienst zur Übermittlung von Texten, Bildern, Audio, Video, Adressen und Standorten, die du mit deinen Freunden und Bekannten austauschen möchtest. Der Schutz deiner Privatsphäre steht hierbei im Mittelpunkt. Deine Nachrichten sind vom Sender bis zum Empfänger verschlüsselt."
 
-#: front-page.php:47
+#: front-page.php:48
 #@ hoccer
 msgid "Hoccer XO is more secure than most other messaging services. Even we at Hoccer can not read your messages. Your contacts and phone numbers stay with you. We don&#39;t need or want them."
 msgstr "Hoccer XO bietet damit einen Sicherheitsvorteil gegenüber vielen anderen Messenger Diensten. Auch wir bei Hoccer können deine Nachrichten nicht lesen. Deine Kontakte und Telefonbucheintragungen verbleiben ebenfalls bei dir und können von uns weder genutzt noch eingesehen werden."
 
-#: front-page.php:48
+#: front-page.php:49
 #@ hoccer
 msgid "Our Privacy & Security Statement"
 msgstr "Datenschutz- & Sicherheitserklärung"
@@ -212,4 +212,39 @@ msgstr ""
 #@ hoccer
 msgid "With Hoccer XO you have full control about the size and loading behavior of your out- and incoming media to reduce your traffic."
 msgstr ""
+
+#: inc/theme-options.php:34
+#@ hoccer
+msgid "Hoccer Theme-Options"
+msgstr "Hoccer Theme-Optionen"
+
+#: inc/theme-options.php:39
+#@ hoccer
+msgid "Settings saved!"
+msgstr "Einstellungen gespeichert!"
+
+#: inc/theme-options.php:48
+#@ hoccer
+msgid "Front Page"
+msgstr "Startseite"
+
+#: inc/theme-options.php:51
+#@ hoccer
+msgid "Hoccer XO Demo"
+msgstr "Hoccer XO Demo"
+
+#: inc/theme-options.php:54
+#@ hoccer
+msgid "show"
+msgstr "anzeigen"
+
+#: inc/theme-options.php:54
+#@ hoccer
+msgid "iPhone with Hoccer XO Screenshots"
+msgstr "iPhone mit Hoccer XO Screenshots"
+
+#: inc/theme-options.php:61
+#@ hoccer
+msgid "Save"
+msgstr "Speichern"
 

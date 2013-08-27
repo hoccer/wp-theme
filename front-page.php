@@ -1,6 +1,7 @@
 		<?php get_header(); ?>
 		<?php $detect = new Mobile_Detect(); ?>
 		<?php $templatepath = get_bloginfo('template_url'); ?>
+		<?php $options = get_option('hoccer_theme_options'); ?>
 		<!-- Hoccer XO Teaser -->
 		<div id="panorama-1" class="intro-outside panorama-1">
 			<div class="intro-inside">
@@ -68,7 +69,9 @@
 			</div>
 		</div>
 		<!-- Hoccer XO Tutorial -->
-		<?php include('tutorial.php'); ?>
+		<?php if ($options['xo-demo-show']) {
+				include('tutorial.php');
+			} ?>
 		<!-- Hoccer Teaser -->
 		<div id="panorama-2" class="intro-outside panorama-2">
 			<div class="intro-inside">

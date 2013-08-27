@@ -1,5 +1,8 @@
 <?php
 
+/* load theme options */
+$options = get_option('hoccer_theme_options');
+
 load_theme_textdomain('hoccer', TEMPLATEPATH .'/languages');
 
 /* Mobile Detect */
@@ -43,10 +46,8 @@ function postimage($atts, $content = null) {
 	echo '<div class="postimage">'.$fullimage.'</div>';
 }
 
-	
 
 add_action( 'init', 'register_my_menus' );
-
 function register_my_menus() {
 	register_nav_menus(
 		array(
@@ -55,7 +56,6 @@ function register_my_menus() {
 		)
 	);
 }
-
 function fallback_menu() {
     wp_page_menu(
     	array(
@@ -63,7 +63,6 @@ function fallback_menu() {
     	)
     );
 }
-
 /* add css class for li with submenu */
 class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 	public function display_element($el, &$children, $max_depth, $depth = 0, $args, &$output) {
@@ -72,30 +71,6 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 		parent::display_element($el, $children, $max_depth, $depth, $args, $output);
 	}
 }
-
-
-
-function favicon4admin() {echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . get_bloginfo('template_directory') . '/favicon.ico" />';}
-add_action( 'admin_head', 'favicon4admin' );
-
-function custom_login() {echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/login.css" />';}
-add_action('login_head', 'custom_login');
-
-
-	  /* =================== */
-	 /* ===== EXCERPT ===== */
-	/* =================== */
-
-
-function new_excerpt_length($length) {return 110;}
-add_filter('excerpt_length', 'new_excerpt_length');
-
-function new_excerpt_more($more) {return ' ...';}
-add_filter('excerpt_more', 'new_excerpt_more');
-
-
-
-
 
 
 /* Shortcodes */
