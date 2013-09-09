@@ -7,38 +7,28 @@
 		<title><?php bloginfo('name'); ?> <?php wp_title(' - ', true, 'left'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-
-		<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" media="screen" />
-
-		<?php wp_head(); ?>
+		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/xo.css" media="screen" />
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body>
 
 		<div id="wrapper">
-			<div class="inner" style="padding: 2em;">
+			<div class="inner">
 
-		<section id="xo-container">
-			<section id="xo-page">
-			
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
-			<section class="page-post">
-				<article class="article">
-					<?php the_content(); ?>
-				</article>
-			</section>
-			<?php endwhile; endif; ?>
-			</section>
-		</section>
-	
+				<section id="xo-container">
+					<section id="xo-page">
+					
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					
+					<section class="page-post">
+						<article class="article">
+							<?php the_content(); ?>
+						</article>
+					</section>
+					<?php endwhile; endif; ?>
+					</section>
+				</section>	
 				</div>
 			</div>
-
-		<?php wp_footer(); ?>
-<!-- -->
-<!--              ▲              -->
-<!--             ▲ ▲             -->
-<!-- -->
 	</body>
 </html>

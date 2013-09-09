@@ -20,14 +20,14 @@
 						<aside class="download download-platform">
 							<span><a class="button appstore"  href="https://itunes.apple.com/gb/app/hoccer-xo/id641387450" target="_blank">AppStore</a></span>
 						</aside>
-					<?php elseif($detect->isAndroidOS() && !$detect->isTablet()) : ?>
+					<?php /* elseif($detect->isAndroidOS() && !$detect->isTablet()) : ?>
 						<aside class="download download-platform">
 							<span><a class="button gplay"  href="https://play.google.com/store/apps/details?id=com.hoccer.xo" target="_blank">Android</a></span>
 						</aside>
-					<?php else : ?>
+					<?php */ else : ?>
 						<aside class="download">
 							<span><a class="button appstore"  href="https://itunes.apple.com/gb/app/hoccer-xo/id641387450" target="_blank">AppStore</a></span>
-							<span><a class="button gplay"  href="https://play.google.com/store/apps/details?id=com.hoccer.xo" target="_blank">Android</a></span>
+							<?php /* ?><span><a class="button gplay"  href="https://play.google.com/store/apps/details?id=com.hoccer.xo" target="_blank">Android</a></span><?php */ ?>
 						</aside>
 					<?php endif; ?>
 				</div>
