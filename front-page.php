@@ -2,6 +2,9 @@
 		<?php $detect = new Mobile_Detect(); ?>
 		<?php $templatepath = get_bloginfo('template_url'); ?>
 		<?php $options = get_option('hoccer_theme_options'); ?>
+		
+		<?php $playstorexo = get_post_meta($post->ID, 'playstorexo', true); ?>
+		<?php $appstorexo = get_post_meta($post->ID, 'appstorexo', true); ?>
 		<!-- Hoccer XO Teaser -->
 		<div id="panorama-1" class="intro-outside panorama-1">
 			<div class="intro-inside">
@@ -17,17 +20,25 @@
 			<div class="download-outside">
 				<div class="download-inside">
 					<?php if($detect->isiOS() && !$detect->isTablet()) : ?>
-						<aside class="download download-platform">
-							<span><a class="button appstore"  href="https://itunes.apple.com/gb/app/hoccer-xo/id641387450" target="_blank">AppStore</a></span>
-						</aside>
-					<?php /* elseif($detect->isAndroidOS() && !$detect->isTablet()) : ?>
-						<aside class="download download-platform">
-							<span><a class="button gplay"  href="https://play.google.com/store/apps/details?id=com.hoccer.xo" target="_blank">Android</a></span>
-						</aside>
-					<?php */ else : ?>
+						<?php if($appstorexo) : ?>
+							<aside class="download download-platform">
+								<span><a class="button appstore"  href="<?php echo $appstorexo ?>" target="_blank">AppStore</a></span>
+							</aside>
+						<?php endif; ?>
+					<?php elseif($detect->isAndroidOS() && !$detect->isTablet()) : ?>
+						<?php if($playstorexo) : ?>
+							<aside class="download download-platform">
+								<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank">Android</a></span>
+							</aside>
+						<?php endif; ?>
+					<?php else : ?>
 						<aside class="download">
-							<span><a class="button appstore"  href="https://itunes.apple.com/gb/app/hoccer-xo/id641387450" target="_blank">AppStore</a></span>
-							<?php /* ?><span><a class="button gplay"  href="https://play.google.com/store/apps/details?id=com.hoccer.xo" target="_blank">Android</a></span><?php */ ?>
+							<?php if($appstorexo) : ?>									
+								<span><a class="button appstore"  href="<?php echo $appstorexo ?>" target="_blank">AppStore</a></span>
+							<?php endif; ?>
+							<?php if($playstorexo) : ?>
+								<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank">Android</a></span>
+							<?php endif; ?>
 						</aside>
 					<?php endif; ?>
 				</div>
