@@ -754,12 +754,12 @@ body {
 	/* ===================== */
 
 @media only screen and (max-width: 60em) {
-	#panorama-1 {
+	#hoccer-xo {
 		margin: 4em auto 0;
 		background-size: auto 100%;
 		background-position: center top !important;
 	}
-	#panorama-2 {
+	#hoccer {
 		background-size: auto 100%;
 		background-position: center top !important;
 	}
@@ -775,8 +775,8 @@ body {
 	}
 }
 @media only screen and (max-width: 48em) {
-	#panorama-1,
-	#panorama-2 {
+	#hoccer-xo,
+	#hoccer {
 		padding: 0 0 66.666%;
 	}
 	.intro {
@@ -878,8 +878,8 @@ body {
 }
 
 @media only screen and (max-width: 30em) {
-	#panorama-1,
-	#panorama-2 {
+	#hoccer-xo,
+	#hoccer {
 		padding: 0 0 96.5%;
 	}
 	.download-platform span {

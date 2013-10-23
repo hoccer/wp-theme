@@ -5,7 +5,7 @@
 		<title><?php bloginfo('name'); ?> <?php wp_title(' - ', true, 'left'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 		<meta name="description" content="<?php bloginfo('description'); ?>" />
-		<meta name="author" content="Peter Amende" />
+		<meta name="author" content="Hoccer" />
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" media="screen" />
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/tutorial.css" media="screen" />
