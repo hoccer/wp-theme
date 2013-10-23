@@ -6,7 +6,7 @@
 		<?php $playstorexo = get_post_meta($post->ID, 'playstorexo', true); ?>
 		<?php $appstorexo = get_post_meta($post->ID, 'appstorexo', true); ?>
 		<!-- Hoccer XO Teaser -->
-		<div id="panorama-1" class="intro-outside panorama-1">
+		<div id="hoccer-xo" class="intro-outside panorama-1">
 			<div class="intro-inside">
 				<aside class="intro">
 					<h1><img src="<?php echo $templatepath; ?>/images/logo-hoccer-xo.png" alt="Hoccer XO" width="352" height="70" /></h1>
@@ -84,7 +84,7 @@
 				include('tutorial.php');
 			} ?>
 		<!-- Hoccer Teaser -->
-		<div id="panorama-2" class="intro-outside panorama-2">
+		<div id="hoccer" class="intro-outside panorama-2">
 			<div class="intro-inside">
 				<aside class="intro">
 					<h1><img src="<?php echo $templatepath; ?>/images/logo-hoccer-classic.png" alt="Hoccer Classic" width="544" height="70" /></h1>
