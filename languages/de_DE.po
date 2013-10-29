@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hoccer 2013 v2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-10-21 19:47:22+0000\n"
+"PO-Revision-Date: 2013-10-29 00:55:24+0000\n"
 "Last-Translator: zutrinken <peter@hoccer.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -245,6 +245,6 @@ msgstr "Speichern"
 
 #: front-page.php:60
 #@ hoccer
-msgid "<a href=\"http://hocer.com/hoccer-xo-privacy-security-statement/\">Our Privacy & Security Statement</a>"
-msgstr "<a href=\"http://hoccer.com/de/datenschutz-und-sicherheitserklarung/\">Datenschutz- und Sicherheitserklärung</a>"
+msgid "<a href=\"http://hoccer.com/hoccer-xo-privacy-security-statement/\">Our Privacy & Security Statement</a>"
+msgstr "<a href=\"http://hoccer.com/de/datenschutz-und-sicherheitserklarung\">Datenschutz- & Sicherheitserklärung</a>/"
 

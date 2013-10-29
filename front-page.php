@@ -57,7 +57,7 @@
 						</div>
 						<div class="two-columns-one last">
 							<p><?php _e('Hoccer XO is more secure than most other messaging services. Even we at Hoccer can not read your messages. Your contacts and phone numbers stay with you. We don&#39;t need or want them.','hoccer'); ?></p>
-							<p><?php _e('<a href="http://hocer.com/hoccer-xo-privacy-security-statement/">Our Privacy & Security Statement</a>','hoccer'); ?></p>
+							<p><?php _e('<a href="http://hoccer.com/hoccer-xo-privacy-security-statement/">Our Privacy & Security Statement</a>','hoccer'); ?></p>
 						</div>
 						<div class="divider"></div>
 						<div class="share-links-wrap">
