@@ -57,6 +57,7 @@
 		
 		/* Video Layer */
 		$('.video-frame').click(function() {
+			$('.video-frame iframe')[0].src += "&autoplay=1";
 			$('.video-layer').hide();
 		});
 	});

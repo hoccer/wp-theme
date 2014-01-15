@@ -184,7 +184,7 @@
 							<div class="video-layer">
 								<img src="<?php echo $templatepath; ?>/images/video-layer.jpg" />
 							</div>
-							<iframe class="video" width="640" height="360" src="http://www.youtube.com/embed/2Fn1t8culTc" frameborder="0" allowfullscreen></iframe>
+							<iframe class="video" width="640" height="360" src="http://www.youtube.com/embed/2Fn1t8culTc?showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
 						</figure>
 					</article>
 				</div>
