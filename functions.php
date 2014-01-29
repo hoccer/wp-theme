@@ -213,4 +213,20 @@ function wp_pagination_navi($num_page_links = 5, $min_max_offset = 2){
         }
     }
 }
+add_filter('upload_mimes', 'custom_upload_mimes');
+
+function custom_upload_mimes ( $existing_mimes=array() ) {
+// add your extension to the array
+$existing_mimes['apk'] = 'application/vnd.android.package-archive';
+$existing_mimes['zip'] = 'application/zip';
+$existing_mimes['pdf'] = 'application/pdf';
+// add as many as you like
+// removing existing file types
+//unset( $existing_mimes['exe'] );
+// add as many as you like
+// and return the new full result
+return $existing_mimes;
+
+}
+
 ?>
