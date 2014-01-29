@@ -5,6 +5,8 @@
 		
 		<?php $playstorexo = get_post_meta($post->ID, 'playstorexo', true); ?>
 		<?php $appstorexo = get_post_meta($post->ID, 'appstorexo', true); ?>
+		<?php $apkxo = get_post_meta($post->ID, 'apkxo', true); ?>
+		
 		<!-- Hoccer XO Teaser -->
 		<div id="hoccer-xo" class="intro-outside panorama-1">
 			<div class="intro-inside">
@@ -26,11 +28,14 @@
 							</aside>
 						<?php endif; ?>
 					<?php elseif($detect->isAndroidOS() && !$detect->isTablet()) : ?>
-						<?php if($playstorexo) : ?>
-							<aside class="download download-platform">
+						<aside class="download download-platform">
+							<?php if($playstorexo) : ?>
 								<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank">Android</a></span>
-							</aside>
-						<?php endif; ?>
+							<?php endif; ?>
+							<?php if($apkxo) : ?>
+								<span class="last"><a class="button apk"  href="<?php echo $apkxo ?>" target="_blank">.apk</a></span>
+							<?php endif; ?>
+						</aside>
 					<?php else : ?>
 						<aside class="download">
 							<?php if($appstorexo) : ?>									
@@ -38,6 +43,9 @@
 							<?php endif; ?>
 							<?php if($playstorexo) : ?>
 								<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank">Android</a></span>
+							<?php endif; ?>
+							<?php if($apkxo) : ?>
+								<span class="last"><a class="button apk"  href="<?php echo $apkxo ?>" target="_blank">.apk</a></span>
 							<?php endif; ?>
 						</aside>
 					<?php endif; ?>
