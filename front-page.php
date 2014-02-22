@@ -16,9 +16,6 @@
 				</aside>
 				<div class="intro-image"></div>
 			</div>
-			<span class="credits">
-				Photo CC BY 2.0: <a target="_blank" rel="nofollow" href="http://www.flickr.com/photos/65845331@N07/5996763395/sizes/l/in/photostream/">ik ben bram</a>
-			</span>
 			<div class="download-outside">
 				<div class="download-inside">
 					<?php if($detect->isiOS() && !$detect->isTablet()) : ?>
