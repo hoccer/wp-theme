@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hoccer 2013 v2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-02-22 13:00:26+0000\n"
+"PO-Revision-Date: 2014-02-22 13:27:17+0000\n"
 "Last-Translator: zutrinken <peter@hoccer.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "Hoccer XO se desmarca de otros servicios de mensajería al hacer especia
 #: front-page.php:65
 #@ hoccer
 msgid "<a href=\"http://hoccer.com/hoccer-xo-privacy-security-statement/\">Our Privacy & Security Statement</a>"
-msgstr "<a href=\"http://hoccer.com/hoccer-xo-privacy-security-statement/\">Política de privacidad y seguridad</a>"
+msgstr "<a href=\"http://hoccer.com/es/politica-de-privacidad-y-seguridad/\">Política de privacidad y seguridad</a>"
 
 #: front-page.php:96
 #@ hoccer
