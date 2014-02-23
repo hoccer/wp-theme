@@ -15,20 +15,45 @@ function enqueue_scripts() {
 	$template = get_template_directory_uri();
 	wp_enqueue_script('modernizr', $template.'/js/libs/modernizr-2.6.2.min.js', array(), null, false);
 
-	wp_register_script('jquery-custom', $template.'/js/libs/jquery.1.7.1.min.js', array(), null, false);
-	wp_enqueue_script('jquery-custom');
+	wp_enqueue_script('jquery');
 
 	wp_enqueue_script('jquery.fitvids', $template.'/js/libs/jquery.fitvids.js', array(), null, false);
+	wp_enqueue_script('jquery.easing', $template.'/js/libs/jquery.easing.min.js', array(), null, false);
+	wp_enqueue_script('jquery.flexslider', $template.'/js/libs/jquery.flexslider.min.js', array(), null, false);
 	wp_enqueue_script('custom-script', $template.'/js/script.js', array(), null, true);
 }
 
 /* Load Google Web Fonts */
-function load_fonts() {
-	wp_register_style('pt-sans', 'http://fonts.googleapis.com/css?family=PT+Sans:400,700');
-	wp_enqueue_style( 'pt-sans');
+function oblivion_fonts_url() {
+	$fonts_url = '';
+
+	$Open_Sans = _x( 'on', 'Open Sans font: on or off', 'oblivion' );
+	$Inconsolata = _x( 'on', 'Inconsolata font: on or off', 'oblivion' );
+	$Vollkorn = _x( 'on', 'Vollkorn font: on or off', 'oblivion' );
+
+	if ( 'off' !== $domine || 'off' !== $lato ) {
+		$font_families = array();
+
+		if ( 'off' !== $Open_Sans )
+			$font_families[] = 'Open+Sans:300,400,600,700,400italic,700italic,800';
+
+		if ( 'off' !== $Inconsolata )
+			$font_families[] = 'Inconsolata:400';
+			
+		if ( 'off' !== $Vollkorn )
+			$font_families[] = 'Vollkorn:400italic,700italic';
+
+		$query_args = array(
+			'family' => urlencode( implode( '|', $font_families ) ),
+			'subset' => urlencode( 'latin,latin-ext' ),
+		);
+		$fonts_url = add_query_arg( $query_args, "//fonts.googleapis.com/css" );
+	}
+
+	return $fonts_url;
 }
-add_action('admin_enqueue_scripts', 'load_fonts');
-add_action('wp_enqueue_scripts', 'load_fonts');
+
+
 
 add_theme_support('post-thumbnails');
 add_editor_style('editor-style.css');
@@ -213,20 +238,4 @@ function wp_pagination_navi($num_page_links = 5, $min_max_offset = 2){
         }
     }
 }
-add_filter('upload_mimes', 'custom_upload_mimes');
-
-function custom_upload_mimes ( $existing_mimes=array() ) {
-// add your extension to the array
-$existing_mimes['apk'] = 'application/vnd.android.package-archive';
-$existing_mimes['zip'] = 'application/zip';
-$existing_mimes['pdf'] = 'application/pdf';
-// add as many as you like
-// removing existing file types
-//unset( $existing_mimes['exe'] );
-// add as many as you like
-// and return the new full result
-return $existing_mimes;
-
-}
-
 ?>

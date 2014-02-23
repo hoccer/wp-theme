@@ -13,21 +13,13 @@
 		<link rel='canonical' href='<?php bloginfo('url'); ?>' />
 		<link rel='index' title='<?php bloginfo('description'); ?>' href='<?php bloginfo('url'); ?>' />
 		<?php $detect = new Mobile_Detect(); ?>
-		<?php if($detect->isTablet() && is_front_page()) : ?>
-			<style type="text/css">
-				#panorama-1 {background-position: center top !important;}
-				#panorama-2 {background-position: center top !important;}
-				.intro-image {bottom: 0 !important;}
-				.tut-area {top: auto !important;}
-			</style>
-		<?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="header">
 			<header class="inner">
 				<a id="logo" href="<?php bloginfo('url'); ?>">
-					<img alt="<?php bloginfo('name'); ?>" src="<?php bloginfo('template_url'); ?>/images/logo.png" />
+					<img alt="<?php bloginfo('name'); ?>" src="<?php bloginfo('template_url'); ?>/images/logo.svg" />
 				</a>
 				<nav id="languages">
 					<?php do_action('icl_language_selector'); ?>
