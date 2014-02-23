@@ -104,10 +104,7 @@
 					</div>
 					<div class="three-columns-two last">
 						<div id="info-text">
-						<h2><?php _e('Your free Messenger App','hoccer'); ?></h2>
-						<p><?php _e('Unlimted data transfer – safe, reliable and fast. Hoccer XO is your personal messenger service. Share text, photos, videos, contacts and places. Protecting your privacy is our highest priority. Your messages are protected using end-to-end encryption.','hoccer'); ?></p>
-						<p><?php _e('Hoccer XO is more secure than most other messaging services. Even we at Hoccer can not read your messages. Your contacts and phone numbers stay with you. We don&#39;t need or want them.','hoccer'); ?></p>
-						<p><?php _e('<a href="http://hoccer.com/hoccer-xo-privacy-security-statement/">Our Privacy & Security Statement</a>','hoccer'); ?></p>
+							<?php the_content(); ?>
 						</div>
 					</div>
 					<div class="divider"></div>
