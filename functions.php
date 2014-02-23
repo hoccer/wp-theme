@@ -9,10 +9,28 @@ load_theme_textdomain('hoccer', TEMPLATEPATH .'/languages');
 /* Mobile Detect */
 include 'inc/mobile_detect.php';
 
+function hoccer_font_url() {
+	$font_url = '';
+	if ('off' !== _x('on','Font: on or off','hoccer')) {
+		$font_url = add_query_arg(
+			'family',
+			urlencode(
+				'Open+Sans:400,700,400italic,700italic|Inconsolata:400|Vollkorn:400,400italic,700italic'
+			),
+			'//fonts.googleapis.com/css'
+		);
+	}
+
+	return $font_url;
+}
+
 /* add scripts */
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 function enqueue_scripts() {
+	wp_enqueue_style( 'hoccer-fonts', hoccer_font_url(), array(), null );
+	
 	$template = get_template_directory_uri();
+	
 	wp_enqueue_script('modernizr', $template.'/js/libs/modernizr-2.6.2.min.js', array(), null, false);
 
 	wp_enqueue_script('jquery');
@@ -21,36 +39,6 @@ function enqueue_scripts() {
 	wp_enqueue_script('jquery.easing', $template.'/js/libs/jquery.easing.min.js', array(), null, false);
 	wp_enqueue_script('jquery.flexslider', $template.'/js/libs/jquery.flexslider.min.js', array(), null, false);
 	wp_enqueue_script('custom-script', $template.'/js/script.js', array(), null, true);
-}
-
-/* Load Google Web Fonts */
-function oblivion_fonts_url() {
-	$fonts_url = '';
-
-	$Open_Sans = _x( 'on', 'Open Sans font: on or off', 'oblivion' );
-	$Inconsolata = _x( 'on', 'Inconsolata font: on or off', 'oblivion' );
-	$Vollkorn = _x( 'on', 'Vollkorn font: on or off', 'oblivion' );
-
-	if ( 'off' !== $domine || 'off' !== $lato ) {
-		$font_families = array();
-
-		if ( 'off' !== $Open_Sans )
-			$font_families[] = 'Open+Sans:300,400,600,700,400italic,700italic,800';
-
-		if ( 'off' !== $Inconsolata )
-			$font_families[] = 'Inconsolata:400';
-			
-		if ( 'off' !== $Vollkorn )
-			$font_families[] = 'Vollkorn:400italic,700italic';
-
-		$query_args = array(
-			'family' => urlencode( implode( '|', $font_families ) ),
-			'subset' => urlencode( 'latin,latin-ext' ),
-		);
-		$fonts_url = add_query_arg( $query_args, "//fonts.googleapis.com/css" );
-	}
-
-	return $fonts_url;
 }
 
 

@@ -116,7 +116,7 @@ body,
 input,
 select,
 textarea {
-	font-family: 'Open Sans', Arial, Sans-Serif;
+	font-family: 'Open Sans', 'Helvetica Neue', 'Arial', Sans-Serif;
 	font-weight: 400;
 	font-size: 1em;
 	line-height: 2em;
