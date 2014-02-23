@@ -650,9 +650,20 @@ body {
 	}
 	#header-teaser {
 		background: #4dbfac !important;
-		padding: 24% 0 16%;
+		padding: 10em 0 4em;
 	}
-	
+	.type-post {
+		position: relative;
+		margin: 0 0 10em;
+		padding: 0;
+	}
+	.post-title {
+		margin: 0 0 0.5em;
+	}
+	.post-time {
+		position: static;
+		font-size: 1em;
+	}
 		
 	#section-header .section-title {
 		margin: 0;

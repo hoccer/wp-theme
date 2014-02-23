@@ -1,4 +1,13 @@
 		<?php get_header(); ?>
+	<?php if(is_home()) : ?>	
+		<div id="header-teaser">
+			<div id="header-teaser-outside">
+				<div class="header-teaser-inside inner">
+					<h1 class="post-title"><?php _e('Blog','hoccer'); ?></h1>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
 		<div id="wrapper">
 			<div class="inner">
 				<section id="container">
