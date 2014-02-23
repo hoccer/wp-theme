@@ -5,14 +5,16 @@
 		
 		<?php $appstorexo = get_post_meta($post->ID, 'appstorexo', true); ?>
 		<?php $playstorexo = get_post_meta($post->ID, 'playstorexo', true); ?>
-		<?php $apk = get_post_meta($post->ID, 'apkxo', true); ?>		
+		<?php $apk = get_post_meta($post->ID, 'apkxo', true); ?>
+		
+		<?php $faq = get_post_meta($post->ID, 'faq', true); ?>
 		
 		<section id="section-header" class="section">
 			<div class="inner">
 				<div class="three-columns-two">
 					<div id="header-text">
 						<h1 class="section-title">A secure messenger for simplified data sharing.</h1>
-						<a id="download" class="download anchor" href="#section-download"><i class="fa fa-download"></i> Download</a>
+						<a id="button-download" class="button anchor" href="#section-download"><i class="fa fa-download"></i> Download</a>
 					</div>
 				</div>
 				<div class="three-columns-one last">
@@ -58,6 +60,7 @@
 					<p class="feature-text">Of course you are able to chat with groups, too.</p>
 				</div>
 				<div class="divider"></div>
+				<center><a id="button-faq" class="button button-dark button-faq" href="<?php echo $faq ?>"><i class="fa fa-lightbulb-o"></i> FAQ</a></center>
 			</div>
 			<a class="section-next anchor" href="#section-info"><i class="fa fa-chevron-down"></i></a>
 		</section>
@@ -129,14 +132,27 @@
 				<h2 class="section-title">Start protecting your messages now!</h2>
 				<div class="clear"></div>
 				<?php if($appstorexo) : ?>									
-					<span><a class="download appstore"  href="<?php echo $appstorexo ?>" target="_blank"><i class="fa fa-apple"></i> AppStore</a></span>
+					<span><a class="button appstore"  href="<?php echo $appstorexo ?>" target="_blank"><i class="fa fa-apple"></i> AppStore</a></span>
 				<?php endif; ?>
 				<?php if($playstorexo) : ?>
-					<span><a class="download gplay"  href="<?php echo $playstorexo ?>" target="_blank"><i class="fa fa-android"></i> Android</a></span>
+					<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank"><i class="fa fa-android"></i> Android</a></span>
 				<?php endif; ?>
 				<?php if($apk) : ?>
-					<span><a class="download apk"  href="<?php echo $apk ?>" target="_blank"><i class="fa fa-archive"></i> APK</a></span>
+					<span><a class="button apk"  href="<?php echo $apk ?>" target="_blank"><i class="fa fa-archive"></i> APK</a></span>
 				<?php endif; ?>
+			</div>
+		</section>
+		
+		
+		<section id="section-social" class="section">
+			<div class="inner">
+				<div id="social-info">
+				<p>Get in touch or follow us to get our latest news.</p>
+				<span><a class="button button-dark button-social button-twitter"  href="https://twitter.com/hoccerxo" target="_blank"><i class="fa fa-twitter"></i> Hoccer XO</a></span>
+				<span><a class="button button-dark button-social button-twitter"  href="https://twitter.com/hoccer" target="_blank"><i class="fa fa-twitter"></i> Hoccer</a></span>
+				<span><a class="button button-dark button-social button-facebook"  href="https://facebook.com/hoccer" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></span>
+				<span><a class="button button-dark button-social button-mail"  href="mailto:info@hoccer.com"><i class="fa fa-envelope-o"></i> Mail</a></span>
+				</div>
 			</div>
 		</section>
 

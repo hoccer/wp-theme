@@ -302,7 +302,7 @@ body {
 
 
 
-.download {
+.button {
 	cursor: pointer;
 	color: #fff;
 	display: inline-block;
@@ -320,15 +320,28 @@ body {
 	
 	border: 2px solid #fff;
 }
-.download:hover,
-.download:focus {
+.button:hover,
+.button:focus {
 	background: #fff;
 	color: #4dbfac;
 }
-.download i {
+.button i {
 	font-size: 1.5em;
 	margin-right: 0.3em;
 }
+
+.button-dark {
+	color: #4dbfac;
+	border: 2px solid #4dbfac;
+}
+.button-dark:hover,
+.button-dark:focus {
+	background: #4dbfac;
+	color: #333;
+}
+
+
+
 
 
 
@@ -400,13 +413,8 @@ body {
   100% { margin-right: 0; opacity: 1; }
 }
 
-#download {
+#button-download {
 	margin: 4em 0;
-}
-#download:hover,
-#download:focus {
-	background: #fff;
-	color: #4dbfac;
 }
 
 #section-header .section-next {
@@ -414,7 +422,7 @@ body {
 	background: #333;
 }
 
-
+	/* ======================== Features */
 
 #section-features {
 	background: #333;
@@ -457,7 +465,11 @@ body {
 	color: #333;
 	background: #fff;
 }
+#button-faq {
+	margin: 0 auto 6em;
+}
 
+	/* ======================== Slider */
 
 #section-slider {
 	background: #000;
@@ -480,6 +492,7 @@ body {
 	background: url('images/slide-3.jpg') no-repeat fixed center center / cover #F4F4F4;
 }
 
+	/* ======================== Info */
 
 #section-info {
 	background: #fff;
@@ -503,6 +516,7 @@ body {
 	background: #4dbfac;
 }
 
+	/* ======================== Video */
 
 #section-video {
 	min-height: 0;
@@ -550,14 +564,16 @@ body {
 	color: rgba(255,255,255,0.625);
 }
 
+	/* ======================== Download */
+
 #section-download {
 	min-height: 0 !important;
 	background: #4dbfac;
 	text-align: center;
 }
 #section-download .inner {
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 6em;
+	padding-bottom: 8em;
 }
 #section-download .section-title {
 	font-family: 'Vollkorn', script;
@@ -595,6 +611,23 @@ body {
 #section-download .section-title:after {
 	right: -1em;
 	content: '\f100';
+}
+
+	/* ======================== Download */
+
+#section-social {
+	min-height: 0 !important;
+	background: #333;
+	text-align: center;
+	color: #808080;
+}
+#section-social .inner {
+	padding-top: 12em;
+	padding-bottom: 4em;
+}
+.button-social {
+	margin: 1em 0.3em 0;
+	padding: 10px 15px;	
 }
 
 
@@ -692,10 +725,15 @@ body {
 		-webkit-transform: translate3d(0px, 0px, 0px) !important;
 		transform: translate3d(0px, 0px, 0px) !important;
 	}
+	#social-info,
 	#info-text,
 	#info-image {
 		-webkit-transform: translate3d(0px, 0px, 0px) !important;
 		transform: translate3d(0px, 0px, 0px) !important;
+	}
+	#section-social .inner {
+		padding-top: 4em;
+		padding-bottom: 8em;
 	}
 	.appicon {
 		margin: 4em auto;

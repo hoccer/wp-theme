@@ -67,6 +67,7 @@ jQuery(function($) {
 		var headerText = scrolled * 0.5;
 		var infoImage = (scrolled - $('#info-image').offset().top) * 0.375;
 		var infoText = (scrolled - $('#info-text').offset().top) * 0.25;
+		var socialInfo = (scrolled - $('#social-info').offset().top) * 0.25;
 
 		$('#header-image').css({
 			'-webkit-transform' : 'translate3d(0px, ' + headerImage + 'px, 0px)',
@@ -84,6 +85,11 @@ jQuery(function($) {
 			'-webkit-transform' : 'translate3d(0px, ' + infoText + 'px, 0px)',
 			'transform' : 'translate3d(0px, ' + infoText + 'px, 0px)'
 		});
+		$('#social-info').css({
+			'-webkit-transform' : 'translate3d(0px, ' + socialInfo + 'px, 0px)',
+			'transform' : 'translate3d(0px, ' + socialInfo + 'px, 0px)'
+		});
+		
 	}
 	
 	/* ==========================================================================
