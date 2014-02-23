@@ -228,23 +228,17 @@ body {
 }
 .post-title {
 	color: #000;
-}
-.post-meta {
-	position: absolute;
-	left: 0;
-
-	display: block;
-	color: #808080;
-}
-.post-meta a {
-	display: block;
-	color: #bfbfbf;
-	line-height: 1.5em;
+	font-size: 1.5em;
 }
 .post-time {
+	position: absolute;
+	left: 0;
 	top: 0;
+	display: block;
+	color: #808080;
+	font-size: 1.5em;
+	line-height: 1em;
 }
-.post-categories {}
 
 
 

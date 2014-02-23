@@ -8,12 +8,9 @@
 								<h2 class="post-title">
 									<?php the_title(); ?>
 								</h2>
-								<time class="post-time post-meta">
+								<time class="post-time">
 									<?php the_time('d.m.y'); ?>
 								</time>
-								<span class="post-categories post-meta">
-									<?php the_category(' ',''); ?>
-								</span>
 							</header>
 							<article class="article">
 								<?php the_content(); ?>
