@@ -7,6 +7,8 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>" />
 		<meta name="author" content="Hoccer" />
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch" href="https://img.youtube.com" />
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" media="screen" />
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/tutorial.css" media="screen" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
