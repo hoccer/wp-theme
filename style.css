@@ -211,8 +211,9 @@ body {
 	color: #808080;
 
 	padding: 1em 0;
-	height: 2em;
-	line-height: 2em;
+	height: 4em;
+	line-height: 4em;
+	font-size: 0.75em;
 }
 
 
