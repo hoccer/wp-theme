@@ -556,10 +556,6 @@ body {
 	color: rgba(255,255,255,0.625);
 }
 
-#section-tutorial {
-	background: #333;
-}
-
 #section-download {
 	min-height: 0 !important;
 	background: #4dbfac;
