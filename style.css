@@ -374,7 +374,7 @@ body {
 }
 #section-header .section-title {
 	margin: 0;
-	padding: 2em 0 0;
+	padding: 3em 0 0;
 	font-weight: 800;
 	font-size: 4em;
 	line-height: 1em;
@@ -503,7 +503,7 @@ body {
 }
 .appicon {
 	display: block;
-	margin: 12em auto 0;
+	margin: 16em auto 0;
 	width: 62.5%;
 }
 #section-info h2 {
