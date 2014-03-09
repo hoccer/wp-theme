@@ -58,52 +58,33 @@ jQuery(function($) {
 	
 	
 	/* ==========================================================================
-	   Parallax Frontpage Banner
+	   Parallax
 	   ========================================================================== */
 
-	function parallaxScroll() {
-		var scrolled = viewport.scrollTop();
-		var headerImage = scrolled * 0.375;
-		var headerText = scrolled * 0.5;
-		var infoImage = (scrolled - $('#info-image').offset().top) * 0.375;
-		var infoText = (scrolled - $('#info-text').offset().top) * 0.25;
-		var socialInfo = (scrolled - $('#social-info').offset().top) * 0.25;
-
-		$('#header-image').css({
-			'-webkit-transform' : 'translate3d(0px, ' + headerImage + 'px, 0px)',
-			'transform' : 'translate3d(0px, ' + headerImage + 'px, 0px)'
-		});
-		$('#header-text').css({
-			'-webkit-transform' : 'translate3d(0px, ' + headerText + 'px, 0px)',
-			'transform' : 'translate3d(0px, ' + headerText + 'px, 0px)'
-		});
-		$('#info-image').css({
-			'-webkit-transform' : 'translate3d(0px, ' + infoImage + 'px, 0px)',
-			'transform' : 'translate3d(0px, ' + infoImage + 'px, 0px)'
-		});
-		$('#info-text').css({
-			'-webkit-transform' : 'translate3d(0px, ' + infoText + 'px, 0px)',
-			'transform' : 'translate3d(0px, ' + infoText + 'px, 0px)'
-		});
-		$('#social-info').css({
-			'-webkit-transform' : 'translate3d(0px, ' + socialInfo + 'px, 0px)',
-			'transform' : 'translate3d(0px, ' + socialInfo + 'px, 0px)'
+	if($('html').hasClass('no-touch')) {
+		
+		$('[data-type]').each(function() {
+			$(this).data('speed', $(this).attr('data-speed'));
 		});
 		
-	}
-	
-	/* ==========================================================================
-	   Fire functions on Scroll Event
-	   ========================================================================== */
-	
-	if($('html').hasClass('no-touch')) {
-		function scrollHandler() {
-			parallaxScroll();
-		}
-		scrollHandler();
-		viewport.on('scroll', function() {
-			scrollHandler();
+		$('[data-type="prlx"]').each(function() {
+			var self = $(this);
+			var topOffset = self.offset().top;
+
+			viewport.scroll(function() {
+/* 				if ( (viewport.scrollTop() + viewport.height()) > (topOffset) && ( (topOffset + self.height()) > viewport.scrollTop() ) ) { */
+					var yPos = (viewport.scrollTop() - topOffset) * self.data('speed');
+					
+					self.css({
+						'-webkit-transform' : 'translate3d(0px, ' + yPos + 'px, 0px)',
+						'transform' : 'translate3d(0px, ' + yPos + 'px, 0px)'
+					});
+/* 				} */
+			});
+
+		
 		});
 	}
+	
 	
 });

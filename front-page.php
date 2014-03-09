@@ -12,13 +12,13 @@
 		<section id="section-header" class="section">
 			<div class="inner">
 				<div class="three-columns-two">
-					<div id="header-text">
+					<div id="header-text" data-type="prlx" data-speed="0.500">
 						<h1 class="section-title">A secure messenger for simplified data sharing.</h1>
 						<a id="button-download" class="button anchor" href="#section-download"><i class="fa fa-download"></i> Download</a>
 					</div>
 				</div>
 				<div class="three-columns-one last">
-					<div id="header-image"></div>
+					<div id="header-image" data-type="prlx" data-speed="0.375"></div>
 				</div>
 				<div class="divider"></div>
 			</div>
@@ -101,12 +101,12 @@
 			<div class="inner">
 				<article class="article">
 					<div class="three-columns-one">
-						<div id="info-image">
+						<div id="info-image" data-type="prlx" data-speed="0.375">
 						<img class="appicon" src="<?php echo $templatepath; ?>/images/appicon-hoccer-xo.png" alt="" />
 						</div>
 					</div>
 					<div class="three-columns-two last">
-						<div id="info-text">
+						<div id="info-text" data-type="prlx" data-speed="0.250">
 							<?php the_content(); ?>
 						</div>
 					</div>
@@ -146,7 +146,7 @@
 		
 		<section id="section-social" class="section">
 			<div class="inner">
-				<div id="social-info">
+				<div id="social-info" data-type="prlx" data-speed="0.250">
 				<p>Get in touch or follow us to get our latest news.</p>
 				<span><a class="button button-dark button-social button-twitter"  href="https://twitter.com/hoccerxo" target="_blank"><i class="fa fa-twitter"></i> Hoccer XO</a></span>
 				<span><a class="button button-dark button-social button-twitter"  href="https://twitter.com/hoccer" target="_blank"><i class="fa fa-twitter"></i> Hoccer</a></span>
