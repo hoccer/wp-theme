@@ -71,18 +71,17 @@ jQuery(function($) {
 			var self = $(this);
 			var topOffset = self.offset().top;
 
-			viewport.scroll(function() {
-/* 				if ( (viewport.scrollTop() + viewport.height()) > (topOffset) && ( (topOffset + self.height()) > viewport.scrollTop() ) ) { */
-					var yPos = (viewport.scrollTop() - topOffset) * self.data('speed');
-					
-					self.css({
-						'-webkit-transform' : 'translate3d(0px, ' + yPos + 'px, 0px)',
-						'transform' : 'translate3d(0px, ' + yPos + 'px, 0px)'
-					});
-/* 				} */
+			function prlx() {
+				var yPos = (viewport.scrollTop() - topOffset) * self.data('speed');
+				self.css({
+					'-webkit-transform' : 'translate3d(0px, ' + yPos + 'px, 0px)',
+					'transform' : 'translate3d(0px, ' + yPos + 'px, 0px)'
+				});
+			}
+			viewport.on('scroll', function() {
+				prlx();
 			});
-
-		
+			prlx();
 		});
 	}
 	
