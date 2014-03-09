@@ -413,7 +413,7 @@ body {
   100% { margin-right: 0; opacity: 1; }
 }
 
-#button-download {
+.button-download {
 	margin: 4em 0;
 }
 
