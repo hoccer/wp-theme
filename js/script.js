@@ -34,13 +34,15 @@ jQuery(function($) {
 		
 		
 		/* Responsive Youtube/Vimeo Videos */
-		$('.section').fitVids();
+		//$('.section').fitVids();
 
 		/* Video Layer */
+/*
 		$('#video-frame').click(function() {
 			$('#video')[0].src += "&autoplay=1";
 			$('#video-layer').hide();
 		}); 
+*/
 		
 	/* ==========================================================================
 	   Smooth Scroll for Anchor Links and URL refresh
