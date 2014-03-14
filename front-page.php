@@ -42,6 +42,17 @@
 					<p class="feature-text">Full encryption on your device so only your friend can read your messages.</p>
 				</div>
 				<div class="two-columns-one last">
+					<figure class="feature-image"><i class="fa fa-eye-slash"></i></figure>
+					<h3 class="feature-title">Stay anonym</h3>
+					<p class="feature-text">We dont scan any of your data. Not even for pairing with your friends.</p>
+				</div>
+				<div class="divider"></div>
+				<div class="two-columns-one">
+					<figure class="feature-image"><i class="fa fa-money"></i></figure>
+					<h3 class="feature-title">Free and ad-free</h3>
+					<p class="feature-text">Our B2B-Plans allows us, to free our service to all private users without any limitations.</p>
+				</div>
+				<div class="two-columns-one last">
 					<figure class="feature-image"><i class="fa fa-puzzle-piece"></i></figure>
 					<h3 class="feature-title">All types of media</h3>
 					<p class="feature-text">Send photos, videos, songs, voice records, contact and your current location as safe as your text messages.</p>
@@ -51,17 +62,6 @@
 					<figure class="feature-image"><i class="fa fa-truck"></i></figure>
 					<h3 class="feature-title">Unlimited filesize</h3>
 					<p class="feature-text">Large Videos? Very long Songs? No problem for us, no limits for you.</p>
-				</div>
-				<div class="two-columns-one last">
-					<figure class="feature-image"><i class="fa fa-money"></i></figure>
-					<h3 class="feature-title">Free and ad-free</h3>
-					<p class="feature-text">Our B2B-Plans allows us, to free our service to all private users without any limitations.</p>
-				</div>
-				<div class="divider"></div>
-				<div class="two-columns-one">
-					<figure class="feature-image"><i class="fa fa-eye-slash"></i></figure>
-					<h3 class="feature-title">No contacts upload</h3>
-					<p class="feature-text">We dont scan any of your data. Not even for pairing with your friends.</p>
 				</div>
 				<div class="two-columns-one last">
 					<figure class="feature-image"><i class="fa fa-group"></i></figure>

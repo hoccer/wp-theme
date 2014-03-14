@@ -497,6 +497,7 @@ body {
 #section-info {
 	background: #fff;
 	overflow: hidden;
+	position: relative;
 }
 #section-info .inner {
 	padding-top: 12.5%;
