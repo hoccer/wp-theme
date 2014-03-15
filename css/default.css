@@ -88,9 +88,15 @@ img[align="right"] {
 
 
 #faq {
-	padding: 2em 2em 1em;
+	padding: 12px 12px 0;
 	border: 1px solid #e3e3e3;
-	color: #bfbfbf;
+	margin: 36px 0;
+}
+#faq p {
+	margin: 1em 0 0;
+}
+#faq p:first-child {
+	margin-top: 0;
 }
 
 #faq textarea {
@@ -117,14 +123,14 @@ input,
 select,
 textarea {
 	font-family: 'Open Sans', 'Helvetica Neue', 'Arial', Sans-Serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1em;
 	line-height: 2em;
 	
-	color: #404040;
+	color: #333;
 }
 h1, h2, h3, h4 {
-	margin: 2em 0;
+	margin: 48px 0;
 	line-height: 1em;
 	font-weight: 700;
 }
@@ -139,9 +145,10 @@ h3 {
 }
 h4 {
 	font-size: 1.25em;
+	font-weight: 600;
 }
-p {
-	margin: 2em 0;
+p, ul, ol {
+	margin: 48px 0;
 }
 a {
 	color: #32b3b0;
