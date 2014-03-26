@@ -57,7 +57,7 @@
 					</div>
 					
 					
-				<?php endwhile; ?>
+				<?php endwhile; wp_reset_query(); ?> 
 			
 				<div class="clear"></div>
 				<center><a id="button-faq" class="button button-dark button-faq" href="<?php echo $faq ?>"><i class="fa fa-lightbulb-o"></i> FAQ</a></center>
