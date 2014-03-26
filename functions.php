@@ -175,7 +175,8 @@ function hoccer_register_features() {
 			),
 			'supports' => array(
 				'title',
-				'editor'
+				'editor',
+				'custom-fields'
 			)
 		)
 	);

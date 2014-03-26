@@ -431,9 +431,17 @@ body {
 #section-features .inner {
 	padding-top: 4em;
 }
-#section-features .two-columns-one {
+.feature {
 	padding: 2em 0;
 	min-height: 8em;
+	width: 48%;
+	float: left;
+	margin-right: 4%;
+}
+.feature-2,
+.feature-4,
+.feature-6 {
+	margin-right: 0;
 }
 .feature-image {
 	display: block;
@@ -457,7 +465,7 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
-.feature-text {
+.feature-text p {
 	margin: 0;
 	color: #808080;
 	line-height: 1.5em;
@@ -654,6 +662,14 @@ body {
 		width: 100%;
 		margin-right: 0;
 	}
+	
+	.feature {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+
+	
 	#logo {
 		max-width: 62.5%;
 		float: none;

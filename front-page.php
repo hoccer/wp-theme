@@ -36,39 +36,30 @@
 		
 		<section id="section-features" class="section">
 			<div class="inner">
-				<div class="two-columns-one">
-					<figure class="feature-image"><i class="fa fa-lock"></i></figure>
-					<h3 class="feature-title">End-to-end Encryption</h3>
-					<p class="feature-text">Full encryption on your device so only your friend can read your messages.</p>
-				</div>
-				<div class="two-columns-one last">
-					<figure class="feature-image"><i class="fa fa-eye-slash"></i></figure>
-					<h3 class="feature-title">Stay anonym</h3>
-					<p class="feature-text">We dont scan any of your data. Not even for pairing with your friends.</p>
-				</div>
-				<div class="divider"></div>
-				<div class="two-columns-one">
-					<figure class="feature-image"><i class="fa fa-money"></i></figure>
-					<h3 class="feature-title">Free and ad-free</h3>
-					<p class="feature-text">Our B2B-Plans allows us, to free our service to all private users without any limitations.</p>
-				</div>
-				<div class="two-columns-one last">
-					<figure class="feature-image"><i class="fa fa-puzzle-piece"></i></figure>
-					<h3 class="feature-title">All types of media</h3>
-					<p class="feature-text">Send photos, videos, songs, voice records, contact and your current location as safe as your text messages.</p>
-				</div>
-				<div class="divider"></div>
-				<div class="two-columns-one">
-					<figure class="feature-image"><i class="fa fa-truck"></i></figure>
-					<h3 class="feature-title">Unlimited filesize</h3>
-					<p class="feature-text">Large Videos? Very long Songs? No problem for us, no limits for you.</p>
-				</div>
-				<div class="two-columns-one last">
-					<figure class="feature-image"><i class="fa fa-group"></i></figure>
-					<h3 class="feature-title">Group chats</h3>
-					<p class="feature-text">Of course you are able to chat with groups, too.</p>
-				</div>
-				<div class="divider"></div>
+				<?php
+					$args = array(
+						'post_type' => 'features',
+						'posts_per_page' => 6,
+						'orderby' => 'date',
+						'order' => 'ASC'
+					);
+					$counter = 0;
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+					$counter++;
+				?>
+
+
+					<div class="feature <?php echo 'feature-'.$counter; ?>">
+						<figure class="feature-image"><?php echo get_post_meta($post->ID, 'feature_icon', true); ?></figure>
+						<h3 class="feature-title"><?php the_title(); ?></h3>
+						<div class="feature-text"><?php the_excerpt(); ?></div>
+					</div>
+					
+					
+				<?php endwhile; ?>
+			
+				<div class="clear"></div>
 				<center><a id="button-faq" class="button button-dark button-faq" href="<?php echo $faq ?>"><i class="fa fa-lightbulb-o"></i> FAQ</a></center>
 			</div>
 			<a class="section-next anchor" href="#section-info"><i class="fa fa-chevron-down"></i></a>
