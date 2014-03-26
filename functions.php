@@ -37,20 +37,6 @@ add_theme_support('post-thumbnails');
 add_editor_style('editor-style.css');
 
 
-function postimage($atts, $content = null) {
-	extract(shortcode_atts(array(
-		"size" => 'thumbnail'
-	), $atts));
-	$images =& get_children( 'post_type=attachment&post_mime_type=image&post_parent=' . get_the_id() );
-	foreach( $images as $imageID => $imagePost )
-	$fullimage = wp_get_attachment_image($imageID, $size, false);
-	$imagedata = wp_get_attachment_image_src($imageID, $size, false);
-	$width = ($imagedata[1]+2);
-	$height = ($imagedata[2]+2);
-	echo '<div class="postimage">'.$fullimage.'</div>';
-}
-
-
 add_action( 'init', 'register_my_menus' );
 function register_my_menus() {
 	register_nav_menus(
