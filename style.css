@@ -426,6 +426,7 @@ body {
 
 #section-features {
 	background: #333;
+	position: relative;
 }
 #section-features .inner {
 	padding-top: 4em;
