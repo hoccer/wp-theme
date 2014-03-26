@@ -64,7 +64,6 @@
 
 
 #main-nav {
-	font-weight: 700;
 	float: right;
 }
 #main-nav ul {
@@ -80,22 +79,22 @@
 }
 #main-nav ul li a {
 	display: block;
-	color: #bfbfbf;
+	color: #808080;
 	
 	height: 2em;
 	line-height: 2em;
 	padding: 1em 0;
 }
 #main-nav ul li a:hover {
-	color: #808080;
+	color: #404040;
 }
 #main-nav ul li.current-menu-item a {
 	color: #404040;
+	font-weight: 400;
 }
 
 
 #footer-navigation {
-	font-weight: 700;
 	float: right;
 }
 #footer-navigation ul {
@@ -110,17 +109,18 @@
 }
 #footer-navigation ul li a {
 	display: block;
-	color: #bfbfbf;
+	color: #808080;
 	
 	height: 2em;
 	line-height: 2em;
 	padding: 1em 0;
 }
 #footer-navigation ul li:hover a {
-	color: #808080;
+	color: #404040;
 }
 #footer-navigation ul li.current-menu-item a {
 	color: #404040;
+	font-weight: 400;
 }
 
 
