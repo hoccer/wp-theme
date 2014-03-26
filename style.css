@@ -630,10 +630,16 @@ body {
 	background: #333;
 	text-align: center;
 	color: #808080;
+	overflow: hidden;
 }
 #section-social .inner {
 	padding-top: 12em;
 	padding-bottom: 4em;
+}
+#section-social figure {
+	display: block;
+	margin: 0 auto 4em;
+	width: 240px;
 }
 .button-social {
 	margin: 1em 0.3em 0;

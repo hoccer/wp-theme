@@ -13,7 +13,7 @@
 			<div class="inner">
 				<div class="three-columns-two">
 					<div id="header-text" data-type="prlx" data-speed="0.500">
-						<h1 class="section-title">A secure messenger for simplified data sharing.</h1>
+						<h1 class="section-title"><?php _e('A secure messenger for simplified data sharing.','hoccer'); ?></h1>
 						<?php if ($detect->isiOS() && $appstorexo) : ?>
 							<a class="button-download button anchor" href="<?php echo $appstorexo; ?>"><i class="fa fa-apple"></i> Download</a>
 						<?php elseif ($detect->isAndroidOS() && $playstorexo) : ?>
@@ -44,25 +44,20 @@
 						'order' => 'ASC'
 					);
 					$counter = 0;
-					$loop = new WP_Query( $args );
-					while ( $loop->have_posts() ) : $loop->the_post();
+					$loop = new WP_Query($args);
+					while ($loop->have_posts()) : $loop->the_post();
 					$counter++;
 				?>
-
-
 					<div class="feature <?php echo 'feature-'.$counter; ?>">
 						<figure class="feature-image"><?php echo get_post_meta($post->ID, 'feature_icon', true); ?></figure>
 						<h3 class="feature-title"><?php the_title(); ?></h3>
 						<div class="feature-text"><?php the_excerpt(); ?></div>
-					</div>
-					
-					
+					</div>	
 				<?php endwhile; wp_reset_query(); ?> 
-			
 				<div class="clear"></div>
 				<center><a id="button-faq" class="button button-dark button-faq" href="<?php echo $faq ?>"><i class="fa fa-lightbulb-o"></i> FAQ</a></center>
 			</div>
-			<a class="section-next anchor" href="#section-info"><i class="fa fa-chevron-down"></i></a>
+<!-- 			<a class="section-next anchor" href="#section-info"><i class="fa fa-chevron-down"></i></a> -->
 		</section>
 		
 		<?php /*
@@ -113,7 +108,7 @@
 					<div class="divider"></div>
 				</article>
 			</div>
-			<a class="section-next anchor" href="#section-download"><i class="fa fa-chevron-down"></i></a>
+<!-- 			<a class="section-next anchor" href="#section-download"><i class="fa fa-chevron-down"></i></a> -->
 		</section>
 		
 		<?php /*
@@ -129,7 +124,7 @@
 		
 		<section id="section-download" class="section">
 			<div class="inner">
-				<h2 class="section-title">Start protecting your messages now!</h2>
+				<h2 class="section-title"><?php _e('Start protecting your messages now!','hoccer'); ?></h2>
 				<div class="clear"></div>
 				<?php if($appstorexo) : ?>									
 					<span><a class="button appstore"  href="<?php echo $appstorexo ?>" target="_blank"><i class="fa fa-apple"></i> AppStore</a></span>
@@ -147,7 +142,10 @@
 		<section id="section-social" class="section">
 			<div class="inner">
 				<div id="social-info" data-type="prlx" data-speed="0.250">
-				<p>Get in touch or follow us to get our latest news.</p>
+				<figure>
+					<img src="<?php echo $templatepath ?>/images/xo.png" alt="" />
+				</figure>
+				
 				<span><a class="button button-dark button-social button-twitter"  href="https://twitter.com/hoccerxo" target="_blank"><i class="fa fa-twitter"></i> Hoccer XO</a></span>
 				<span><a class="button button-dark button-social button-twitter"  href="https://twitter.com/hoccer" target="_blank"><i class="fa fa-twitter"></i> Hoccer</a></span>
 				<span><a class="button button-dark button-social button-facebook"  href="https://facebook.com/hoccer" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></span>
