@@ -148,4 +148,36 @@ function scapegoat_shortcode_divider($atts, $content = null) {
 }
 add_shortcode( 'divider', 'scapegoat_shortcode_divider' );
 
+
+
+
+add_action('init', 'hoccer_register_features', 0);
+function hoccer_register_features() {
+	register_post_type(
+		'features',
+		array(
+			'description' => __('Features','hoccer'),
+			'labels' => array(
+				'name' => __('Features','hoccer'),
+				'singular_name' => __('Feature','hoccer'),
+				'add_new' => __('Add New','hoccer'),
+				'add_new_item' => __('Add New Feature','hoccer'),
+				'edit' => __('Edit','hoccer'),
+				'edit_item' => __('Edit Feature','hoccer'),
+				'new_item' => __('New Feature','hoccer'),
+				'view' => __('View Features','hoccer')
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'features',
+				'with_front' => FALSE
+			),
+			'supports' => array(
+				'title',
+				'editor'
+			)
+		)
+	);
+}
 ?>
