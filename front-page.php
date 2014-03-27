@@ -60,7 +60,7 @@
 <!-- 			<a class="section-next anchor" href="#section-info"><i class="fa fa-chevron-down"></i></a> -->
 		</section>
 		
-		<?php /*
+
 		
 		<section id="section-slider" class="section">
 			<div class="flexslider">
@@ -68,21 +68,21 @@
 					<li>
 						<div id="slide-1" class="slide-section section">
 							<div class="inner">
-								<h3 class="slide-title">Slide</h3>
+								<h3 class="slide-title">Chat, baby!</h3>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div id="slide-2" class="slide-section section">
 							<div class="inner">
-								<h3 class="slide-title">Slide</h3>
+								<h3 class="slide-title">Location based chats, digga!</h3>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div id="slide-3" class="slide-section section">
 							<div class="inner">
-								<h3 class="slide-title">Slide</h3>
+								<h3 class="slide-title">Check your keys manually!</h3>
 							</div>
 						</div>
 					</li>
@@ -90,7 +90,7 @@
 			</div>
 		</section>
 		
-		*/ ?>
+
 		
 		<section id="section-info" class="section">
 			<div class="inner">

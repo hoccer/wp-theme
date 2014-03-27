@@ -15,6 +15,7 @@ jQuery(function($) {
 			useCSS:			false,
 			animation:		'slide',
 			direction:		'horizontal',
+			slideshowSpeed:	10000,
 			animationSpeed:	750,
 			easing:			'easeOutExpo',
 			reverse:		false,
