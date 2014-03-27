@@ -399,7 +399,7 @@ body {
 	min-width: 320px;
 	height: 100%;
 	right: 32px;
-	top: 6em;
+	top: 10em;
 	background: url('images/xo-iphone.png') no-repeat scroll center bottom / contain transparent;
 	-webkit-animation: fromright 1.5s;
 	animation: fromright 1.5s;
@@ -488,15 +488,23 @@ body {
 	height: 0;
 	padding-bottom: 37.5%;
 }
-#section-slider .slide-title {
+#section-slider .slide-info {
 	text-align: center;
 	color: #fff;
 	position: absolute;
-	top: 37.5%;
+	top: 25%;
 	width: 62.5%;
-	left: 18.75%;
-	font-size: 3em;
+	left: 18.75%;	
+}
+#section-slider .slide-title {
+	color: #fff;
+	font-size: 2.4em;
 	text-shadow: 0 2px 16px rgba(0,0,0,0.1);
+}
+#section-slider .slide-text {
+	color: #fff;
+	font-size: 2em;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 #slide-1 {
 	background: url('images/slide-1.jpg') no-repeat fixed center center / cover #F4F4F4;

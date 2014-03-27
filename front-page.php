@@ -68,21 +68,30 @@
 					<li>
 						<div id="slide-1" class="slide-section section">
 							<div class="inner">
-								<h3 class="slide-title">Chat, baby!</h3>
+								<div class="slide-info">
+									<h3 class="slide-title"><?php _e('Private Messaging','hoccer'); ?></h3>
+									<p class="slide-text"><?php _e('Keep all your data private between you and your contacts.','hoccer'); ?></p>
+								</div>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div id="slide-2" class="slide-section section">
 							<div class="inner">
-								<h3 class="slide-title">Location based chats, digga!</h3>
+								<div class="slide-info">
+									<h3 class="slide-title"><?php _e('Location Based Data Sharing','hoccer'); ?></h3>
+									<p class="slide-text"><?php _e('Join public conversations or share data with temporarily contacts nearby.','hoccer'); ?></p>
+								</div>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div id="slide-3" class="slide-section section">
 							<div class="inner">
-								<h3 class="slide-title">Check your keys manually!</h3>
+								<div class="slide-info">
+									<h3 class="slide-title"><?php _e('Compare your Fingerprints','hoccer'); ?></h3>
+									<p class="slide-text"><?php _e('Verify your public encryption keys manually on your friends device for extra security.','hoccer'); ?></p>
+								</div>
 							</div>
 						</div>
 					</li>
