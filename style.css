@@ -454,6 +454,7 @@ body {
 	font-size: 4em;
 	line-height: 1em;
 	color: #4dbfac;
+	cursor: default;
 }
 
 .feature-title {
