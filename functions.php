@@ -181,4 +181,35 @@ function hoccer_register_features() {
 		)
 	);
 }
+
+add_action('init', 'hoccer_register_slider', 0);
+function hoccer_register_slider() {
+	register_post_type(
+		'slides',
+		array(
+			'description' => __('Slides','hoccer'),
+			'labels' => array(
+				'name' => __('Slides','hoccer'),
+				'singular_name' => __('Slide','hoccer'),
+				'add_new' => __('Add New','hoccer'),
+				'add_new_item' => __('Add New Slide','hoccer'),
+				'edit' => __('Edit','hoccer'),
+				'edit_item' => __('Edit Slide','hoccer'),
+				'new_item' => __('New Slide','hoccer'),
+				'view' => __('View Slides','hoccer')
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'slides',
+				'with_front' => FALSE
+			),
+			'supports' => array(
+				'title',
+				'editor',
+				'thumbnail'
+			)
+		)
+	);
+}
 ?>

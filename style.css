@@ -503,17 +503,12 @@ body {
 }
 #section-slider .slide-text {
 	color: #fff;
-	font-size: 2em;
+	font-size: 1.6em;
 	text-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-#slide-1 {
-	background: url('images/slide-1.jpg') no-repeat fixed center center / cover #F4F4F4;
-}
-#slide-2 {
-	background: url('images/slide-2.jpg') no-repeat fixed center center / cover #F4F4F4;
-}
-#slide-3 {
-	background: url('images/slide-3.jpg') no-repeat fixed center center / cover #F4F4F4;
+
+.slide-section {
+	background: no-repeat fixed center center / cover #F4F4F4;
 }
 
 	/* ======================== Info */

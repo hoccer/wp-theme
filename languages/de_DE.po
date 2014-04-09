@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hoccer v3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-03-26 22:12:12+0000\n"
+"PO-Revision-Date: 2014-04-09 10:48:23+0000\n"
 "Last-Translator: zutrinken <peter@hoccer.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -152,7 +152,7 @@ msgstr "Speichern"
 msgid "A secure messenger for simplified data sharing."
 msgstr "Sicheres & anonymes Messaging."
 
-#: front-page.php:127
+#: front-page.php:133
 #@ hoccer
 msgid "Start protecting your messages now!"
 msgstr "Schütze jetzt deine Nachrichten!"
@@ -169,6 +169,7 @@ msgid "Feature"
 msgstr ""
 
 #: functions.php:163
+#: functions.php:194
 #@ hoccer
 msgid "Add New"
 msgstr ""
@@ -179,6 +180,7 @@ msgid "Add New Feature"
 msgstr ""
 
 #: functions.php:165
+#: functions.php:196
 #@ hoccer
 msgid "Edit"
 msgstr ""
@@ -201,5 +203,36 @@ msgstr ""
 #: index.php:6
 #@ hoccer
 msgid "Blog"
+msgstr ""
+
+#: functions.php:190
+#: functions.php:192
+#@ hoccer
+msgid "Slides"
+msgstr ""
+
+#: functions.php:193
+#@ hoccer
+msgid "Slide"
+msgstr ""
+
+#: functions.php:195
+#@ hoccer
+msgid "Add New Slide"
+msgstr ""
+
+#: functions.php:197
+#@ hoccer
+msgid "Edit Slide"
+msgstr ""
+
+#: functions.php:198
+#@ hoccer
+msgid "New Slide"
+msgstr ""
+
+#: functions.php:199
+#@ hoccer
+msgid "View Slides"
 msgstr ""
 

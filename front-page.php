@@ -65,36 +65,33 @@
 		<section id="section-slider" class="section">
 			<div class="flexslider">
 				<ul class="slides">
+					<?php
+						$args = array(
+							'post_type' => 'slides',
+							'posts_per_page' => 6,
+							'orderby' => 'date',
+							'order' => 'ASC'
+						);
+						$counter = 0;
+						$loop = new WP_Query($args);
+						while ($loop->have_posts()) : $loop->the_post();
+						$counter++;
+
+						if(has_post_thumbnail()) {
+							$image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');	
+						}
+					?>
 					<li>
-						<div id="slide-1" class="slide-section section">
+						<div id="<?php echo 'slide-'.$counter; ?>" class="slide-section section <?php echo 'slide-section-'.$counter; ?>" style="background-image: url(<?php echo $image[0]; ?>);">
 							<div class="inner">
 								<div class="slide-info">
-									<h3 class="slide-title"><?php _e('Private Messaging','hoccer'); ?></h3>
-									<p class="slide-text"><?php _e('Keep all your data private between you and your contacts.','hoccer'); ?></p>
+									<h3 class="slide-title"><?php the_title(); ?></h3>
+									<div class="slide-text"><?php the_content(); ?></div>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li>
-						<div id="slide-2" class="slide-section section">
-							<div class="inner">
-								<div class="slide-info">
-									<h3 class="slide-title"><?php _e('Location Based Data Sharing','hoccer'); ?></h3>
-									<p class="slide-text"><?php _e('Join public conversations or share data with temporarily contacts nearby.','hoccer'); ?></p>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div id="slide-3" class="slide-section section">
-							<div class="inner">
-								<div class="slide-info">
-									<h3 class="slide-title"><?php _e('Compare your Fingerprints','hoccer'); ?></h3>
-									<p class="slide-text"><?php _e('Verify your public encryption keys manually on your friends device for extra security.','hoccer'); ?></p>
-								</div>
-							</div>
-						</div>
-					</li>
+					<?php endwhile; wp_reset_query(); ?> 
 				</ul>
 			</div>
 		</section>
