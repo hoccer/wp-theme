@@ -68,8 +68,8 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 add_filter( 'widget_text', 'do_shortcode' );
 
 /* Replace WP autop formatting */
-if (!function_exists( "scapegoat_remove_wpautop")) {
-	function scapegoat_remove_wpautop($content) { 
+if (!function_exists( "hoccer_remove_wpautop")) {
+	function hoccer_remove_wpautop($content) { 
 		$content = do_shortcode( shortcode_unautop( $content ) ); 
 		$content = preg_replace( '#^<\/p>|^<br \/>|<p>$#', '', $content);
 		return $content;
@@ -78,75 +78,98 @@ if (!function_exists( "scapegoat_remove_wpautop")) {
 
 
 /* Two Columns */
-function scapegoat_shortcode_two_columns_one( $atts, $content = null ) {
-   return '<div class="two-columns-one">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_two_columns_one( $atts, $content = null ) {
+   return '<div class="two-columns-one">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'two_columns_one', 'scapegoat_shortcode_two_columns_one' );
+add_shortcode( 'two_columns_one', 'hoccer_shortcode_two_columns_one' );
 
-function scapegoat_shortcode_two_columns_one_last( $atts, $content = null ) {
-   return '<div class="two-columns-one last">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_two_columns_one_last( $atts, $content = null ) {
+   return '<div class="two-columns-one last">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'two_columns_one_last', 'scapegoat_shortcode_two_columns_one_last' );
+add_shortcode( 'two_columns_one_last', 'hoccer_shortcode_two_columns_one_last' );
 
 
 /* Three Columns */
-function scapegoat_shortcode_three_columns_one($atts, $content = null) {
-   return '<div class="three-columns-one">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_three_columns_one($atts, $content = null) {
+   return '<div class="three-columns-one">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'three_columns_one', 'scapegoat_shortcode_three_columns_one' );
+add_shortcode( 'three_columns_one', 'hoccer_shortcode_three_columns_one' );
 
-function scapegoat_shortcode_three_columns_one_last($atts, $content = null) {
-   return '<div class="three-columns-one last">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_three_columns_one_last($atts, $content = null) {
+   return '<div class="three-columns-one last">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'three_columns_one_last', 'scapegoat_shortcode_three_columns_one_last' );
+add_shortcode( 'three_columns_one_last', 'hoccer_shortcode_three_columns_one_last' );
 
-function scapegoat_shortcode_three_columns_two($atts, $content = null) {
-   return '<div class="three-columns-two">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_three_columns_two($atts, $content = null) {
+   return '<div class="three-columns-two">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'three_columns_two', 'scapegoat_shortcode_three_columns_two' );
+add_shortcode( 'three_columns_two', 'hoccer_shortcode_three_columns_two' );
 
-function scapegoat_shortcode_three_columns_two_last($atts, $content = null) {
-   return '<div class="three-columns-two last">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_three_columns_two_last($atts, $content = null) {
+   return '<div class="three-columns-two last">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'three_columns_two_last', 'scapegoat_shortcode_three_columns_two_last' );
+add_shortcode( 'three_columns_two_last', 'hoccer_shortcode_three_columns_two_last' );
 
 
 /* Four Columns */
-function scapegoat_shortcode_four_columns_one($atts, $content = null) {
-   return '<div class="four-columns-one">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_four_columns_one($atts, $content = null) {
+   return '<div class="four-columns-one">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'four_columns_one', 'scapegoat_shortcode_four_columns_one' );
+add_shortcode( 'four_columns_one', 'hoccer_shortcode_four_columns_one' );
 
-function scapegoat_shortcode_four_columns_one_last($atts, $content = null) {
-   return '<div class="four-columns-one last">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_four_columns_one_last($atts, $content = null) {
+   return '<div class="four-columns-one last">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'four_columns_one_last', 'scapegoat_shortcode_four_columns_one_last' );
+add_shortcode( 'four_columns_one_last', 'hoccer_shortcode_four_columns_one_last' );
 
-function scapegoat_shortcode_four_columns_two($atts, $content = null) {
-   return '<div class="four-columns-two">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_four_columns_two($atts, $content = null) {
+   return '<div class="four-columns-two">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'four_columns_two', 'scapegoat_shortcode_four_columns_two' );
+add_shortcode( 'four_columns_two', 'hoccer_shortcode_four_columns_two' );
 
-function scapegoat_shortcode_four_columns_two_last($atts, $content = null) {
-   return '<div class="four-columns-two last">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_four_columns_two_last($atts, $content = null) {
+   return '<div class="four-columns-two last">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'four_columns_two_last', 'scapegoat_shortcode_four_columns_two_last' );
+add_shortcode( 'four_columns_two_last', 'hoccer_shortcode_four_columns_two_last' );
 
-function scapegoat_shortcode_four_columns_three($atts, $content = null) {
-   return '<div class="four-columns-three">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_four_columns_three($atts, $content = null) {
+   return '<div class="four-columns-three">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'four_columns_three', 'scapegoat_shortcode_four_columns_three' );
+add_shortcode( 'four_columns_three', 'hoccer_shortcode_four_columns_three' );
 
-function scapegoat_shortcode_four_columns_three_last($atts, $content = null) {
-   return '<div class="four-columns-three last">' . scapegoat_remove_wpautop($content) . '</div>';
+function hoccer_shortcode_four_columns_three_last($atts, $content = null) {
+   return '<div class="four-columns-three last">' . hoccer_remove_wpautop($content) . '</div>';
 }
-add_shortcode( 'four_columns_three_last', 'scapegoat_shortcode_four_columns_three_last' );
+add_shortcode( 'four_columns_three_last', 'hoccer_shortcode_four_columns_three_last' );
 
 /* Divide Text Shortcode */
-function scapegoat_shortcode_divider($atts, $content = null) {
+function hoccer_shortcode_divider($atts, $content = null) {
    return '<div class="divider"></div>';
 }
-add_shortcode( 'divider', 'scapegoat_shortcode_divider' );
+add_shortcode( 'divider', 'hoccer_shortcode_divider' );
+
+function hoccer_button( $atts, $content = null ) {
+    extract(shortcode_atts(array(
+    'link'	=> '#',
+    'target' => '',
+    'color'	=> '',
+    'size'	=> '',
+	 'form'	=> '',
+	 'font'	=> '',
+    ), $atts));
+
+	$color = ($color) ? ' '.$color. '-btn' : '';
+	$size = ($size) ? ' '.$size. '-btn' : '';
+	$form = ($form) ? ' '.$form. '-btn' : '';
+	$font = ($font) ? ' '.$font. '-btn' : '';
+	$target = ($target == 'blank') ? ' target="_blank"' : '';
+
+	$out = '<a' .$target. ' class="standard-btn' .$color.$size.$form.$font. '" href="' .$link. '"><span>' .do_shortcode($content). '</span></a>';
+
+    return $out;
+}
+add_shortcode('button', 'hoccer_button');
+
 
 
 
