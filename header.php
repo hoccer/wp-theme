@@ -1,6 +1,59 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head profile="http://gmpg.org/xfn/11">
+	
+		<!--
+                    
+                                  ..:MMMMMMM8::..                                
+                               MMMMMMMMMMMMMMMMMMO                              
+                           .MMMMMMMMMMMMMMMMMMMMMMMM..                          
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:                        
+                      .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                        
+                    ..MM MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO:                    
+                   .MM.  .MMMMMMMMMMMMMMMMMM.   .MMMMMMMMMM.                    
+                   MM     .MMMMMMMMMMMMMM.         MMMMMMMMM                    
+                  MM.       MMMMMMMMMMM.            .MMMMMMMM                   
+                 MM.  MM   .MMMMMMMMMM.              .MMMMMMM.                  
+                MM.  MMMM.  .MMMMMMMM     .MMMM.       MMMMMMM.                 
+               MM   .MMMM   .MMMMMMM:     MMMMMM.      MMMMMMMM                 
+              :MM   .MMM$   MMMMMMMM     .MMMMMM.       MMMMMMMM                
+              MM           MMMMMMMMMM     MMMMMM.       MMMMMMMM.               
+             .MM..         MMMMMMMMMM     .MMMM        .MMMMMMMMM               
+             MMMM..         .MMMMMMM.                   MMMMMMMMM.              
+             MMMMM..                                   .MMMMMMMMM.              
+            MMMMMMMM..                                 MMMMMMMMMMM.             
+            MMMMMMMMMMM:.                            .MMMMMMMMMMMM.             
+           .MMM,,,,,,.:MMMMMM:..                ..MMMMMMMMMMMMMMMMM.            
+           MMM,,,,,,,,,,,,,,,MMMMMMMMMMMMMMMMMMMMMMMMMMMM,,,,,,:MMM.            
+           MM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMMMM,,,,,,,,,,,MMM.           
+          .M8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,=MMM:,,,,,,,,,,,,,,MM.           
+          =M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMMM,,,,,,,,,,,,,,,,,MM.          
+          MM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMM,,,,,,,,,,,,,,,,,,,MM.          
+          MM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MM,,,,,,,,,,,,,,,,,,,,,,M:          
+          MM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MM,,,,,,,,,,,,,,,,,,,,,,,MM          
+          MO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMM,,,,,,,,,,,,,,,,,,,,,,,MM.         
+          M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MM,,,,,,,,,,,,,,,,,,,,,,,,NM.         
+          M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MM,,,,,,,,,,,,,,,,,,,,,,,,,M.         
+          M,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMM,,,,,,,,,,,,,,,,,,,,,,,,M.         
+          M=,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MM,:,,,,,,,,,,,,,,,,,,,,,,M          
+          MM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMM,,,,,,,,,,,,,,,,,,,,,,M.         
+          MM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMMM,,,,,,,,,,MM,,,,,,,M.         
+        MMMM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMMMMMMMMMM,,,,,,,,IM:        
+      MMMMMMMMM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMM         
+      MMMMMMMMMMM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMMZ        
+       MMMMMMMMMMMM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMMMM        
+       MMMMMMMMMMMMM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMMMMM        
+       .8MMMMMMMMMMMM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OMMMMMM        
+          MMMMMMMMMMMM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MMMMMM.        
+           .MMMMMMMMMMMN,,,DMMMMMMMMMMMMMMMMMMM:,,,,,,,,,,,,,,,MMMMMMMM         
+              .MMMMM ..,MMM~.                ..MMMMMMMN,,,,+MMMMMMMMMM         
+                                                      ,MMMMZ.MMMMMMMM.          
+                                                             .MMMMMM.           
+                                                              .MMM.             
+                                                                         
+			
+		-->
+	
 		<?php $options = get_option('hoccer_theme_options'); ?>
 		<title><?php bloginfo('name'); ?> <?php wp_title(' - ', true, 'left'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
