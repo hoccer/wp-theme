@@ -720,7 +720,10 @@ body {
 		position: static;
 		font-size: 1em;
 	}
-		
+	#section-header .inner {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	#section-header .section-title {
 		margin: 0;
 		padding: 4em 0 0;
@@ -735,7 +738,7 @@ body {
 	}
 	#header-image {
 		position: relative;
-		width: 50%;
+		width: 100%;
 		min-width: 0;
 		height: 0;
 		margin: 0 auto 4em;
