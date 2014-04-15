@@ -787,6 +787,28 @@ body {
 	#section-features {
 		text-align: center;
 	}
-
+	#section-slider,
+	.slide-section {
+		min-height: 0 !important;
+	}
+	#section-slider .inner {
+		padding-bottom: 150%;
+	}
+	#section-slider .slide-info {
+		position: relative;
+		top: auto;
+		width: auto;
+		left: auto;	
+	}
+	#section-slider .slide-title {
+		font-size: 1.8em;
+	}
+	#section-slider .slide-text {
+		font-size: 1.3em;
+		display: none;
+	}
+	.slide-section {
+		background-attachment: scroll;
+	}
 }
 
