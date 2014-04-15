@@ -668,17 +668,6 @@ body {
 }
 
 @media only screen and (max-width: 40em) {
-	.two-columns-one,
-	.three-columns-one,
-	.three-columns-two,
-	.four-columns-one,
-	.four-columns-two,
-	.four-columns-three {
-		float: none;
-		width: 100%;
-		margin-right: 0;
-	}
-	
 	.feature {
 		width: auto;
 		float: none;
