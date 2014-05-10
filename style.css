@@ -574,7 +574,7 @@ body {
 }
 
 .slide-section {
-	background: no-repeat fixed center center / cover #F4F4F4;
+	background: no-repeat scroll center center / cover #F4F4F4;
 }
 
 	/* ======================== Info */
