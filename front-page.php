@@ -8,7 +8,7 @@
 		<?php $apk = get_post_meta($post->ID, 'apkxo', true); ?>
 		
 		<?php $faq = get_post_meta($post->ID, 'faq', true); ?>
-		
+
 		<section id="section-header" class="section">
 			<div class="inner">
 				<div class="three-columns-two">

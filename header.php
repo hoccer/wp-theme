@@ -51,7 +51,7 @@
                                                              .MMMMMM.           
                                                               .MMM.             
                                                                          
-			
+		zutrinken.com
 		-->
 	
 		<?php $options = get_option('hoccer_theme_options'); ?>
@@ -85,3 +85,13 @@
 				<div class="clear"></div>
 			</header>
 		</div>
+		<?php if(is_front_page()) : ?>
+			<div id="loading">
+				<div class="spinner">
+					<div class="bounce1"></div>
+					<div class="bounce2"></div>
+					<div class="bounce3"></div>
+				</div>
+			</div>
+
+		<?php endif; ?>

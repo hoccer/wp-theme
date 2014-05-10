@@ -22,9 +22,17 @@
 					s.parentNode.insertBefore(po, s);
 			})();
 		</script>
-
-		<!--              ▲              -->
-		<!--             ▲ ▲             -->
-
+		
+		<?php if(is_front_page()) : ?>
+		<script type="text/javascript">
+			window.onload = function () {
+				jQuery(function($) {
+					$('#loading').fadeOut(500, function() {
+						$(this).hide();
+					});
+				});
+			};
+		</script>
+		<?php endif; ?>
 	</body>
 </html>
