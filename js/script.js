@@ -41,9 +41,10 @@ jQuery(function($) {
 	   Smooth Scroll for Anchor Links and URL refresh
 	   ========================================================================== */
 
+	var scrollEl = $.browser.mozilla ? $('html') : $('body');
 	$('a.anchor').click(function() {
 		var href = $.attr(this, 'href');
-		$('html').animate({
+		scrollEl.animate({
 			scrollTop: $(href).offset().top
 		}, 1000, function() {
 			window.location.hash = href;
