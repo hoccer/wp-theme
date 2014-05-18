@@ -28,6 +28,19 @@
 				</div>
 				<div class="three-columns-one last">
 					<div id="header-image" data-type="prlx" data-speed="0.375"></div>
+					
+					<div id="header-demo" data-type="prlx" data-speed="0.375">
+						<div id="header-demo-canvas">
+							<div id="header-demo-image-wrapper">
+								<div id="header-demo-0" class="header-demo-image"></div>
+								<div id="header-demo-1" class="header-demo-image"></div>
+								<div id="header-demo-2" class="header-demo-image"></div>
+								<div id="header-demo-3" class="header-demo-image"></div>
+								<div id="header-demo-4" class="header-demo-image"></div>
+								<div id="header-demo-5" class="header-demo-image"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="divider"></div>
 			</div>
