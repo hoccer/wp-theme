@@ -405,6 +405,15 @@ body {
 	background: #4dbfac;
 	color: #333;
 }
+.button-light {
+	color: #4dbfac;
+	border: 2px solid #4dbfac;
+}
+.button-light:hover,
+.button-light:focus {
+	background: #4dbfac;
+	color: #fff;
+}
 
 
 
@@ -545,38 +554,6 @@ body {
 	margin: 0 auto 6em;
 }
 
-	/* ======================== Slider */
-
-#section-slider {
-	background: #000;
-}
-#section-slider .inner {
-	height: 0;
-	padding-bottom: 37.5%;
-}
-#section-slider .slide-info {
-	text-align: center;
-	color: #fff;
-	position: absolute;
-	top: 25%;
-	width: 62.5%;
-	left: 18.75%;	
-}
-#section-slider .slide-title {
-	color: #fff;
-	font-size: 2.4em;
-	text-shadow: 0 2px 16px rgba(0,0,0,0.1);
-}
-#section-slider .slide-text {
-	color: #fff;
-	font-size: 1.6em;
-	text-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.slide-section {
-	background: no-repeat scroll center center / cover #F4F4F4;
-}
-
 	/* ======================== Info */
 
 #section-info {
@@ -585,7 +562,8 @@ body {
 	position: relative;
 }
 #section-info .inner {
-	padding-top: 12.5%;
+	padding-top: 25%;
+	padding-bottom: 12.5%;
 }
 .appicon {
 	display: block;
@@ -602,64 +580,60 @@ body {
 	background: #4dbfac;
 }
 
-	/* ======================== Video */
+	/* ======================== Slider */
 
-#section-video {
-	min-height: 0;
+#section-slider {
 	background: #000;
 }
-#video-frame {
-    cursor: pointer;
-    position: relative;
+#section-slider .inner {
+	height: 0;
+	padding-bottom: 62.5%;
 }
-#video-layer {
-    background: url('images/video-layer.jpg') no-repeat scroll center center / cover #F4F4F4;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-}
-#video-layer:after {
-	font-family: 'FontAwesome';
-	content: '\f16a';
-	font-style: normal;
-	font-weight: normal;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	position: absolute;
-	width: 320px;
-	height: 240px;
-	top: 50%;
-	left: 50%;
-	padding: 0;
-	margin: -120px 0 0 -160px;
-	font-size: 10em;
-	line-height: 240px;
+#section-slider .slide-info {
 	text-align: center;
-	color: rgba(255,255,255,0.375);
-
-	-webkit-transition: all ease 0.3s;
-	transition: all ease 0.3s;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	width: 62.5%;
+	left: 50%;
+	height: 320px;
+	margin-top: -160px;
+	margin-left: -31.25%;
+	z-index: 2;
 }
-#video-layer:hover:after,
-#video-layer:focus:after {
-	font-size: 12em;
-	color: rgba(255,255,255,0.625);
+#section-slider .slide-title {
+	color: #fff;
+	font-size: 2.4em;
+	text-shadow: 0 2px 16px rgba(0,0,0,0.1);
+}
+#section-slider .slide-text {
+	color: #fff;
+	font-size: 1.6em;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slide-section {
+	background: #F4F4F4;
+}
+#section-slider .slide-image {
+	position: absolute;
+	width: 100%;
+	height: 125%;
+	top: 0;
+	left: 0;
+	background: no-repeat scroll center center / cover #F4F4F4;
+	z-index: 1;
 }
 
 	/* ======================== Download */
 
 #section-download {
-	min-height: 0 !important;
 	background: #4dbfac;
 	text-align: center;
 }
 #section-download .inner {
-	padding-top: 6em;
-	padding-bottom: 8em;
+	padding-top: 8em;
+	padding-bottom: 10em;
 }
 #section-download .section-title {
 	font-family: 'Vollkorn', script;
@@ -702,15 +676,14 @@ body {
 	/* ======================== Download */
 
 #section-social {
-	min-height: 0 !important;
-	background: #333;
+	background: #fff;
 	text-align: center;
 	color: #808080;
 	overflow: hidden;
 }
 #section-social .inner {
-	padding-top: 12em;
-	padding-bottom: 4em;
+	padding-top: 6em;
+	padding-bottom: 6em;
 }
 #section-social figure {
 	display: block;
@@ -817,9 +790,9 @@ body {
 		-webkit-transform: translate3d(0px, 0px, 0px) !important;
 		transform: translate3d(0px, 0px, 0px) !important;
 	}
-	#social-info,
 	#info-text,
-	#info-image {
+	#info-image,
+	#section-slider .slide-image {
 		-webkit-transform: translate3d(0px, 0px, 0px) !important;
 		transform: translate3d(0px, 0px, 0px) !important;
 	}
@@ -853,25 +826,25 @@ body {
 	#section-features {
 		text-align: center;
 	}
-	#section-slider,
-	.slide-section {
-		min-height: 0 !important;
-	}
 	#section-slider .inner {
-		padding-bottom: 150%;
+		padding-bottom: 125%;
 	}
 	#section-slider .slide-info {
+		height: auto;
+		left: auto;
+		margin: 0;
 		position: relative;
 		top: auto;
 		width: auto;
-		left: auto;	
 	}
 	#section-slider .slide-title {
 		font-size: 1.8em;
 	}
 	#section-slider .slide-text {
 		font-size: 1.3em;
-		display: none;
+	}
+	#section-slider .slide-image {
+		height: 100%;
 	}
 	.slide-section {
 		background-attachment: scroll;

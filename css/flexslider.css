@@ -79,7 +79,13 @@ html[xmlns] .slides {display: block;}
 .flex-pauseplay a.flex-play:before { content: '\f003'; }
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: 1em; text-align: center;}
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 1em;
+	text-align: center;
+	z-index: 3;
+}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
 .flex-control-paging li a {
 	position: relative;

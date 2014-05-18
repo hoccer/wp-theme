@@ -57,10 +57,25 @@
 				<div class="clear"></div>
 				<center><a id="button-faq" class="button button-dark button-faq" href="<?php echo $faq ?>"><i class="fa fa-lightbulb-o"></i> FAQ</a></center>
 			</div>
-<!-- 			<a class="section-next anchor" href="#section-info"><i class="fa fa-chevron-down"></i></a> -->
 		</section>
 		
-
+		<section id="section-info" class="section">
+			<div class="inner">
+				<article class="article">
+					<div class="three-columns-one">
+						<div id="info-image" data-type="prlx" data-speed="0.375">
+							<img class="appicon" src="<?php echo $templatepath; ?>/images/appicon-hoccer-xo.png" alt="" />
+						</div>
+					</div>
+					<div class="three-columns-two last">
+						<div id="info-text" data-type="prlx" data-speed="0.250">
+							<?php the_content(); ?>
+						</div>
+					</div>
+					<div class="divider"></div>
+				</article>
+			</div>
+		</section>
 		
 		<section id="section-slider" class="section">
 			<div class="flexslider">
@@ -82,13 +97,14 @@
 						}
 					?>
 					<li>
-						<div id="<?php echo 'slide-'.$counter; ?>" class="slide-section section <?php echo 'slide-section-'.$counter; ?>" style="background-image: url(<?php echo $image[0]; ?>);">
+						<div id="<?php echo 'slide-'.$counter; ?>" class="slide-section section <?php echo 'slide-section-'.$counter; ?>">
 							<div class="inner">
 								<div class="slide-info">
 									<h3 class="slide-title"><?php the_title(); ?></h3>
 									<div class="slide-text"><?php the_content(); ?></div>
 								</div>
 							</div>
+							<div class="slide-image" style="background-image: url(<?php echo $image[0]; ?>);" data-type="prlx" data-speed="0.250"></div>
 						</div>
 					</li>
 					<?php endwhile; wp_reset_query(); ?> 
@@ -96,66 +112,38 @@
 			</div>
 		</section>
 		
-
-		
-		<section id="section-info" class="section">
-			<div class="inner">
-				<article class="article">
-					<div class="three-columns-one">
-						<div id="info-image" data-type="prlx" data-speed="0.375">
-							<img class="appicon" src="<?php echo $templatepath; ?>/images/appicon-hoccer-xo.png" alt="" />
-						</div>
-					</div>
-					<div class="three-columns-two last">
-						<div id="info-text" data-type="prlx" data-speed="0.250">
-							<?php the_content(); ?>
-						</div>
-					</div>
-					<div class="divider"></div>
-				</article>
-			</div>
-<!-- 			<a class="section-next anchor" href="#section-download"><i class="fa fa-chevron-down"></i></a> -->
-		</section>
-		
-		<?php /*
-		
-		<section id="section-video" class="section">
-			<figure id="video-frame">
-				<div id="video-layer"></div>
-				<iframe id="video" width="640" height="360" src="http://www.youtube.com/embed/2Fn1t8culTc?showinfo=0&controls=2" frameborder="0" allowfullscreen></iframe>
-			</figure>
-		</section>
-		
-		*/ ?>
-		
 		<section id="section-download" class="section">
 			<div class="inner">
-				<h2 class="section-title"><?php _e('Start protecting your messages now!','hoccer'); ?></h2>
-				<div class="clear"></div>
-				<?php if($appstorexo) : ?>									
-					<span><a class="button appstore"  href="<?php echo $appstorexo ?>" target="_blank"><i class="fa fa-apple"></i> AppStore</a></span>
-				<?php endif; ?>
-				<?php if($playstorexo) : ?>
-					<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank"><i class="fa fa-android"></i> Android</a></span>
-				<?php endif; ?>
-				<?php if($apk) : ?>
-					<span><a class="button apk"  href="<?php echo $apk ?>" target="_blank"><i class="fa fa-archive"></i> APK</a></span>
-				<?php endif; ?>
+				<div id="download-wrapper">
+					<h2 class="section-title"><?php _e('Start protecting your messages now!','hoccer'); ?></h2>
+					<div class="clear"></div>
+					<?php if($appstorexo) : ?>									
+						<span><a class="button appstore"  href="<?php echo $appstorexo ?>" target="_blank"><i class="fa fa-apple"></i> AppStore</a></span>
+					<?php endif; ?>
+					<?php if($playstorexo) : ?>
+						<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank"><i class="fa fa-android"></i> Android</a></span>
+					<?php endif; ?>
+					<?php if($apk) : ?>
+						<span><a class="button apk"  href="<?php echo $apk ?>" target="_blank"><i class="fa fa-archive"></i> APK</a></span>
+					<?php endif; ?>
+				</div>
 			</div>
 		</section>
 		
 		
 		<section id="section-social" class="section">
 			<div class="inner">
-				<div id="social-info" data-type="prlx" data-speed="0.250">
+				<div id="social-wrapper">
+<!--
 				<figure>
 					<img src="<?php echo $templatepath ?>/images/xo.png" alt="" />
 				</figure>
+-->
 				
-				<span><a class="button button-dark button-social button-twitter"  href="https://twitter.com/hoccerxo" target="_blank"><i class="fa fa-twitter"></i> Hoccer XO</a></span>
-				<span><a class="button button-dark button-social button-twitter"  href="https://twitter.com/hoccer" target="_blank"><i class="fa fa-twitter"></i> Hoccer</a></span>
-				<span><a class="button button-dark button-social button-facebook"  href="https://facebook.com/hoccer" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></span>
-				<span><a class="button button-dark button-social button-mail"  href="mailto:info@hoccer.com"><i class="fa fa-envelope-o"></i> Mail</a></span>
+				<span><a class="button button-light button-social button-twitter"  href="https://twitter.com/hoccerxo" target="_blank"><i class="fa fa-twitter"></i> Hoccer XO</a></span>
+				<span><a class="button button-light button-social button-twitter"  href="https://twitter.com/hoccer" target="_blank"><i class="fa fa-twitter"></i> Hoccer</a></span>
+				<span><a class="button button-light button-social button-facebook"  href="https://facebook.com/hoccer" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></span>
+				<span><a class="button button-light button-social button-mail"  href="mailto:info@hoccer.com"><i class="fa fa-envelope-o"></i> Mail</a></span>
 				</div>
 			</div>
 		</section>
