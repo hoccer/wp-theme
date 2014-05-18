@@ -143,16 +143,33 @@
 			</div>
 		</section>
 		
+		<section id="section-blog" class="section">
+			<div class="inner">
+				<div id="blog-wrapper" data-type="prlx" data-speed="0.250">
+					<?php
+					$args = array(
+						'offset' => 0,
+						'posts_per_page' => 3,
+						'ignore_sticky_posts' => 1
+					);
+					$counter = 0;
+					query_posts($args);
+					if (have_posts()) : while (have_posts()) : the_post(); $counter++; ?>
+						<section id="post-<?php the_ID(); ?>" <?php post_class('post-count-'.$counter.' featured-post'); ?>>
+							<h4 class="post-title"><?php the_title(); ?></h4>
+							<?php the_excerpt(); ?>
+							<a class="post-more" href="<?php the_permalink(); ?>"></a>
+						</section>
+					<?php endwhile; endif; wp_reset_query(); ?>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</section>
 		
 		<section id="section-social" class="section">
 			<div class="inner">
 				<div id="social-wrapper">
-<!--
-				<figure>
-					<img src="<?php echo $templatepath ?>/images/xo.png" alt="" />
-				</figure>
--->
-				
+
 				<span><a class="button button-light button-social button-twitter"  href="https://twitter.com/hoccerxo" target="_blank"><i class="fa fa-twitter"></i> Hoccer XO</a></span>
 				<span><a class="button button-light button-social button-twitter"  href="https://twitter.com/hoccer" target="_blank"><i class="fa fa-twitter"></i> Hoccer</a></span>
 				<span><a class="button button-light button-social button-facebook"  href="https://facebook.com/hoccer" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></span>
