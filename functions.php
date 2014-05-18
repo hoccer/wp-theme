@@ -63,6 +63,28 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 }
 
 
+
+
+
+
+function language_selector_custom() {
+	$languages = icl_get_languages('skip_missing=0&orderby=code');
+	if(!empty($languages)) {
+		foreach($languages as $l) {
+			if(!$l['active'])
+				echo '<a href="'.$l['url'].'">';
+			else
+				echo '<a href="'.$l['url'].'" class="active">';
+				
+			echo '<span>'.$l['language_code'].'</span>';
+			
+			echo '</a>';
+		}
+	}
+}
+
+
+
 /* Shortcodes */
 /* Enable shortcodes in widget areas */
 add_filter( 'widget_text', 'do_shortcode' );

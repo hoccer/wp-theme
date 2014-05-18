@@ -97,7 +97,10 @@
 
 #languages {
 	float: right;
+	padding: 1em 0;
+	margin-left: 2em;
 }
+/*
 #languages ul {}
 #languages ul li {
 	margin: 1em 0 1em 2em !important;
@@ -126,6 +129,27 @@
 #languages ul ul a {
 	padding: 0 1em !important;
 }
+*/
+
+#languages a {
+	height: 2em;
+    line-height: 2em;
+	display: block;
+	float: left;
+	text-transform: uppercase;
+}
+#languages a span {
+	display: block;
+	border: 1px solid #e3e3e3;
+	padding: 0 8px;
+	margin-left: -1px;
+}
+#languages a.active {
+	color: #bfbfbf;
+}
+#languages a.active span {
+	background: #f9f9f9;
+}
 
 
 
@@ -141,7 +165,7 @@
 #main-nav ul li {
 	float: left;
 	padding: 0;
-	margin: 0 0 0 1.5em;
+	margin: 0 1.5em 0 0;
 }
 #main-nav ul li a {
 	display: block;
@@ -726,9 +750,7 @@ body {
 	#main-nav {
 		float: left;
 	}
-	#languages {
-		float: right;
-	}
+/*
 	#languages ul li {
 		margin: 0.666em 0 0.666em 2em !important;
 	}
@@ -743,6 +765,7 @@ body {
 	#languages ul ul {
 		top: 1.5em !important;
 	}
+*/
 	#header-teaser {
 		background: #4dbfac !important;
 		padding: 10em 0 4em;

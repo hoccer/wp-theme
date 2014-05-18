@@ -77,7 +77,9 @@
 					<img alt="<?php bloginfo('name'); ?>" src="<?php bloginfo('template_url'); ?>/images/logo.svg" />
 				</a>
 				<nav id="languages">
-					<?php do_action('icl_language_selector'); ?>
+					<?php /* do_action('icl_language_selector'); */ ?>
+					<?php language_selector_custom(); ?>
+					<div class="clear"></div>
 				</nav>
 				<nav id="main-nav">
 					<?php wp_nav_menu(array('theme_location'=>'main', 'fallback_cb' => fallback_menu, 'walker' => new My_Walker_Nav_Menu())); ?>
