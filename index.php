@@ -2,7 +2,7 @@
 	<?php if(is_home()) : ?>	
 		<div id="header-teaser">
 			<div id="header-teaser-outside">
-				<div class="header-teaser-inside inner">
+				<div id="header-teaser-inside" class="inner">
 					<h1 class="post-title"><?php _e('Blog','hoccer'); ?></h1>
 				</div>
 			</div>
@@ -12,18 +12,15 @@
 			<div class="inner">
 				<section id="container">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<section id="post-<?php the_ID(); ?>" class="type-post">
+						<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<header class="header">
 								<h2 class="post-title">
-									<?php the_title(); ?>
+									<a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h2>
 								<time class="post-time">
 									<?php the_time('d.m.y'); ?>
 								</time>
 							</header>
-							<article class="article">
-								<?php the_content(); ?>
-							</article>
 						</section>
 					<?php endwhile; ?>
 						<nav id="postnav">
