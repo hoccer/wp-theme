@@ -866,7 +866,7 @@ body {
 }
 #section-blog .inner {
 	padding-top: 16em;
-	padding-bottom: 4em;
+	padding-bottom: 16em;
 }
 #blog-wrapper {}
 
@@ -921,7 +921,7 @@ body {
 	/* ======================== Social */
 
 #section-social {
-	background: #fff;
+	background: url('images/bg-social.png') no-repeat scroll center center / cover #333;
 	text-align: center;
 	color: #808080;
 	overflow: hidden;
@@ -1080,6 +1080,9 @@ body {
 	}
 	.front-post .post-title {
 		margin: 0.5em 0;
+	}
+	#section-social {
+		background: #333;
 	}
 }
 
