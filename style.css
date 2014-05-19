@@ -310,17 +310,18 @@ body {
 .hentry {
 	position: relative;
 	margin: 0 0 4em;
-	padding: 0 0 4em 10em;
+	padding: 0 0 4em;
 	border-bottom: 1px solid #e3e3e3;
-}
-.single .hentry {
-	padding-left: 0;
 }
 .post-title {
 	color: #000;
 	font-size: 1.5em;
 	margin: 0;
 	padding: 0;
+	padding-left: 10em;
+}
+.single .post-title {
+	padding-left: 0;
 }
 .post-title a {
 	color: inherit;
@@ -391,6 +392,7 @@ body {
 #header-teaser .post-title {
 	font-size: 3em;
 	margin: 0;
+	padding: 0;
 	color: #fff;
 }
 #header-teaser .post-meta {
@@ -867,42 +869,53 @@ body {
 	padding-bottom: 4em;
 }
 #blog-wrapper {}
-.featured-post {
+
+.front-post {
 	float: left;
-	width: 30.666%;
-	padding: 0;
-	margin: 0;
-	margin-right: 4%;
+	width: 42%;
+	margin-right: 8%;
 	position: relative;
+	height: 0;
+	padding-top: 1px;
+	padding-bottom: 20%;
+	border: 0;
 }
-.featured-post.post-count-1 {}
-.featured-post.post-count-2 {}
-.featured-post.post-count-3 {
+.front-post:after {
+	content: '';
+	position: absolute;
+	width: 106%;
+	height: 104%;
+	left: -3%;
+	top: -2%;
+	background: #f4f4f4;
+	border-top: 3px solid #4dbfac;
+	z-index: -1;
+}
+.front-post:hover:after,
+.front-post:focus:after {
+	background: #efefef;
+}
+.front-post.post-count-2,
+.front-post.post-count-4,
+.front-post.post-count-6 {
 	margin-right: 0;
 }
-.featured-post .post-title {
-	min-height: 72px;
-	margin: 0;
-	margin-bottom: 24px;
+.front-post .post-title {
+	margin: 0.5em 0;
+	padding: 0;
 }
-.featured-post p {
-	margin: 0;
+.front-post .post-time {
+	position: static;
+	font-size: 1em;
 }
-.featured-post .post-more {
-	display: none;
-	text-align: center;
+.front-post .post-link {
 	position: absolute;
-	top: -4%;
-	left: -4%;
-	width: 108%;
-	height: 108%;
-	margin: -1px;
-	border: 1px solid transparent;
-}
-.featured-post:hover .post-more,
-.featured-post:focus .post-more {
-	display: block;
-	border-color: #4dbfac;
+	width: 106%;
+	height: 104%;
+	left: -3%;
+	top: -2%;
+	background: transparent;
+	z-index: 10;
 }
 
 	/* ======================== Social */
@@ -987,12 +1000,12 @@ body {
 		color: #fff;
 	}
 	.hentry {
-		padding-left: 0;
 		padding-bottom: 3em;
 		margin-bottom: 3em;
 	}
 	.post-title {
 		margin: 0 0 0.5em;
+		padding-left: 0;
 	}
 	.post-time {
 		position: static;
@@ -1058,12 +1071,15 @@ body {
 		padding: 0;
 		font-size: 2em;
 	}
-	.featured-post {
+	.front-post {
 		float: none;
 		width: auto;
-		padding: 0;
-		margin: 0;
-		margin-bottom: 4em;
+		margin-right: 0;
+		height: auto;
+		padding-bottom: 3em;
+	}
+	.front-post .post-title {
+		margin: 0.5em 0;
 	}
 }
 

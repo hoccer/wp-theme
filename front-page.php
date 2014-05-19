@@ -149,16 +149,22 @@
 					<?php
 					$args = array(
 						'offset' => 0,
-						'posts_per_page' => 3,
+						'posts_per_page' => 6,
 						'ignore_sticky_posts' => 1
 					);
 					$counter = 0;
 					query_posts($args);
 					if (have_posts()) : while (have_posts()) : the_post(); $counter++; ?>
-						<section id="post-<?php the_ID(); ?>" <?php post_class('post-count-'.$counter.' featured-post'); ?>>
-							<h4 class="post-title"><?php the_title(); ?></h4>
-							<?php the_excerpt(); ?>
-							<a class="post-more" href="<?php the_permalink(); ?>"></a>
+						<section id="post-<?php the_ID(); ?>" <?php post_class('post-count-'.$counter.' front-post'); ?>>
+							<header class="header">
+								<h4 class="post-title">
+									<a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								</h4>
+								<time class="post-time">
+									<?php the_time('d.m.y'); ?>
+								</time>
+							</header>
+							<a class="post-link" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"></a>
 						</section>
 					<?php endwhile; endif; wp_reset_query(); ?>
 					<div class="clear"></div>
