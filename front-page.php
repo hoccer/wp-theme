@@ -142,36 +142,44 @@
 				</div>
 			</div>
 		</section>
-		
+		<?php /*
 		<section id="section-blog" class="section">
 			<div class="inner">
-				<div id="blog-wrapper" data-type="prlx" data-speed="0.250">
-					<?php
-					$args = array(
-						'offset' => 0,
-						'posts_per_page' => 6,
-						'ignore_sticky_posts' => 1
-					);
-					$counter = 0;
-					query_posts($args);
-					if (have_posts()) : while (have_posts()) : the_post(); $counter++; ?>
-						<section id="post-<?php the_ID(); ?>" <?php post_class('post-count-'.$counter.' front-post'); ?>>
-							<header class="header">
-								<h4 class="post-title">
-									<a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								</h4>
-								<time class="post-time">
-									<?php the_time('d.m.y'); ?>
-								</time>
-							</header>
-							<a class="post-link" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"></a>
-						</section>
-					<?php endwhile; endif; wp_reset_query(); ?>
-					<div class="clear"></div>
+				<div class="three-columns-two">
+					<div id="blog-wrapper" data-type="prlx" data-speed="0.250">
+						<?php
+						$args = array(
+							'offset' => 0,
+							'posts_per_page' => 6,
+							'ignore_sticky_posts' => 1
+						);
+						$counter = 0;
+						query_posts($args);
+						if (have_posts()) : while (have_posts()) : the_post(); $counter++; ?>
+							<section id="post-<?php the_ID(); ?>" <?php post_class('post-count-'.$counter.' front-post'); ?>>
+								<header class="header">
+									<h4 class="post-title">
+										<a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									</h4>
+									<time class="post-time">
+										<?php the_time('d.m.y'); ?>
+									</time>
+								</header>
+								<a class="post-link" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"></a>
+							</section>
+						<?php endwhile; endif; wp_reset_query(); ?>
+						<div class="clear"></div>
+					</div>
 				</div>
+				<div class="three-columns-one last">
+					<div id="info-text" data-type="prlx" data-speed="0.375">
+
+					</div>
+				</div>
+				<div class="divider"></div>
 			</div>
 		</section>
-		
+		*/ ?>
 		<section id="section-social" class="section">
 			<div class="inner">
 				<div id="social-wrapper">

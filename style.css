@@ -309,16 +309,16 @@ body {
 
 .hentry {
 	position: relative;
-	margin: 0 0 4em;
-	padding: 0 0 4em;
+	margin: 0;
+	padding: 64px 0;
 	border-bottom: 1px solid #e3e3e3;
 }
 .post-title {
 	color: #000;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	margin: 0;
 	padding: 0;
-	padding-left: 10em;
+	padding-left: 128px;
 }
 .single .post-title {
 	padding-left: 0;
@@ -333,37 +333,11 @@ body {
 .post-time {
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 64px;
 	display: block;
 	color: #808080;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	line-height: 1em;
-}
-
-
-
-
-.share-links-wrap {
-	height: 40px;
-}
-.share-links-wrap ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.share-links-wrap ul li {
-	float: left;
-	height: 30px;
-	overflow: hidden;
-}
-.share-links-wrap ul li.gplus {
-	width: 76px;
-}
-.share-links-wrap ul li.twitter {
-	width: 96px;	
-}
-.share-links-wrap ul li.fb {
-	width: 128px;
 }
 
 
@@ -385,7 +359,7 @@ body {
 	color: #fff;
 	color: rgba(255,255,255,0.75);
 	font-size: 2em;
-	line-height: 1.5em;
+	line-height: 1.8em;
 	position: absolute;
 	left: 0;
 }
@@ -865,58 +839,12 @@ body {
 	background: #fff;
 }
 #section-blog .inner {
-	padding-top: 16em;
+	padding-top: 12em;
 	padding-bottom: 16em;
 }
 #blog-wrapper {}
 
-.front-post {
-	float: left;
-	width: 42%;
-	margin-right: 8%;
-	position: relative;
-	height: 0;
-	padding-top: 1px;
-	padding-bottom: 20%;
-	border: 0;
-}
-.front-post:after {
-	content: '';
-	position: absolute;
-	width: 106%;
-	height: 104%;
-	left: -3%;
-	top: -2%;
-	background: #f4f4f4;
-	border-top: 3px solid #4dbfac;
-	z-index: -1;
-}
-.front-post:hover:after,
-.front-post:focus:after {
-	background: #efefef;
-}
-.front-post.post-count-2,
-.front-post.post-count-4,
-.front-post.post-count-6 {
-	margin-right: 0;
-}
-.front-post .post-title {
-	margin: 0.5em 0;
-	padding: 0;
-}
-.front-post .post-time {
-	position: static;
-	font-size: 1em;
-}
-.front-post .post-link {
-	position: absolute;
-	width: 106%;
-	height: 104%;
-	left: -3%;
-	top: -2%;
-	background: transparent;
-	z-index: 10;
-}
+.front-post {}
 
 	/* ======================== Social */
 
@@ -1000,8 +928,7 @@ body {
 		color: #fff;
 	}
 	.hentry {
-		padding-bottom: 3em;
-		margin-bottom: 3em;
+		padding: 48px 0;
 	}
 	.post-title {
 		margin: 0 0 0.5em;
@@ -1070,16 +997,6 @@ body {
 		margin: 1em;
 		padding: 0;
 		font-size: 2em;
-	}
-	.front-post {
-		float: none;
-		width: auto;
-		margin-right: 0;
-		height: auto;
-		padding-bottom: 3em;
-	}
-	.front-post .post-title {
-		margin: 0.5em 0;
 	}
 	#section-social {
 		background: #333;

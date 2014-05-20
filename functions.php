@@ -85,6 +85,13 @@ function language_selector_custom() {
 
 
 
+function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+
 /* Shortcodes */
 /* Enable shortcodes in widget areas */
 add_filter( 'widget_text', 'do_shortcode' );
