@@ -117,6 +117,11 @@
 									<div class="slide-text"><?php the_content(); ?></div>
 								</div>
 							</div>
+							<?php if(get_post(get_post_thumbnail_id())->post_excerpt) : ?>
+								<figcaption class="slide-image-caption">
+									<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
+								</figcaption>
+							<?php endif; ?>
 							<div class="slide-image" style="background-image: url(<?php echo $image[0]; ?>);" data-type="prlx" data-speed="0.250"></div>
 						</div>
 					</li>
