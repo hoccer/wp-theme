@@ -764,12 +764,12 @@ body {
 #section-slider .slide-title {
 	color: #fff;
 	font-size: 2.4em;
-	text-shadow: 0 2px 16px rgba(0,0,0,0.1);
+	text-shadow: 0 1px 12px rgba(0,0,0,0.1), 0 2px 16px rgba(0,0,0,0.1);
 }
 #section-slider .slide-text {
 	color: #fff;
-	font-size: 1.6em;
-	text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	font-size: 1.8em;
+	text-shadow: 0 1px 4px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .slide-section {
@@ -798,6 +798,10 @@ body {
 	color: #fff;
 	color: rgba(255,255,255,0.75);
 	z-index: 2;
+}
+#section-slider .slide-image-caption a {
+	color: #fff;
+	color: rgba(255,255,255,0.75);	
 }
 
 	/* ======================== Download */
