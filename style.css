@@ -137,18 +137,20 @@
 	display: block;
 	float: left;
 	text-transform: uppercase;
+	color: #bfbfbf;
 }
 #languages a span {
 	display: block;
-	border: 1px solid #e3e3e3;
+	border-left: 1px solid #e3e3e3;
 	padding: 0 8px;
 	margin-left: -1px;
 }
-#languages a.active {
-	color: #bfbfbf;
+#languages a:first-child span {
+	border: 0;
 }
-#languages a.active span {
-	background: #f9f9f9;
+#languages a.active {
+	color: #404040;
+	font-weight: 400;
 }
 
 
