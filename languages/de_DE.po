@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hoccer v3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-04-09 10:48:23+0000\n"
+"PO-Revision-Date: 2014-05-21 14:24:51+0000\n"
 "Last-Translator: zutrinken <peter@hoccer.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -152,50 +152,50 @@ msgstr "Speichern"
 msgid "A secure messenger for simplified data sharing."
 msgstr "Sicheres & anonymes Messaging."
 
-#: front-page.php:133
+#: front-page.php:136
 #@ hoccer
 msgid "Start protecting your messages now!"
 msgstr "Schütze jetzt deine Nachrichten!"
 
-#: functions.php:159
-#: functions.php:161
+#: functions.php:211
+#: functions.php:213
 #@ hoccer
 msgid "Features"
 msgstr ""
 
-#: functions.php:162
+#: functions.php:214
 #@ hoccer
 msgid "Feature"
 msgstr ""
 
-#: functions.php:163
-#: functions.php:194
+#: functions.php:215
+#: functions.php:246
 #@ hoccer
 msgid "Add New"
 msgstr ""
 
-#: functions.php:164
+#: functions.php:216
 #@ hoccer
 msgid "Add New Feature"
 msgstr ""
 
-#: functions.php:165
-#: functions.php:196
+#: functions.php:217
+#: functions.php:248
 #@ hoccer
 msgid "Edit"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:218
 #@ hoccer
 msgid "Edit Feature"
 msgstr ""
 
-#: functions.php:167
+#: functions.php:219
 #@ hoccer
 msgid "New Feature"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:220
 #@ hoccer
 msgid "View Features"
 msgstr ""
@@ -205,34 +205,49 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: functions.php:190
-#: functions.php:192
+#: functions.php:242
+#: functions.php:244
 #@ hoccer
 msgid "Slides"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:245
 #@ hoccer
 msgid "Slide"
 msgstr ""
 
-#: functions.php:195
+#: functions.php:247
 #@ hoccer
 msgid "Add New Slide"
 msgstr ""
 
-#: functions.php:197
+#: functions.php:249
 #@ hoccer
 msgid "Edit Slide"
 msgstr ""
 
-#: functions.php:198
+#: functions.php:250
 #@ hoccer
 msgid "New Slide"
 msgstr ""
 
-#: functions.php:199
+#: functions.php:251
 #@ hoccer
 msgid "View Slides"
 msgstr ""
+
+#: 404.php:5
+#@ hoccer
+msgid "404"
+msgstr ""
+
+#: 404.php:14
+#@ hoccer
+msgid "Page not found."
+msgstr ""
+
+#: front-page.php:25
+#@ hoccer
+msgid "Free Download"
+msgstr "Gratis Download"
 

@@ -15,14 +15,14 @@
 					<div id="header-text" data-type="prlx" data-speed="0.500">
 						<h1 class="section-title"><?php _e('A secure messenger for simplified data sharing.','hoccer'); ?></h1>
 						<?php if ($detect->isiOS() && $appstorexo) : ?>
-							<a class="button-download button anchor" href="<?php echo $appstorexo; ?>"><i class="fa fa-apple"></i> Download</a>
+							<a class="button-download button anchor" href="<?php echo $appstorexo; ?>"><i class="fa fa-apple"></i> AppStore</a>
 						<?php elseif ($detect->isAndroidOS() && $playstorexo) : ?>
-							<a class="button-download button anchor" href="<?php echo $playstorexo; ?>"><i class="fa fa-android"></i> Download</a>
+							<a class="button-download button anchor" href="<?php echo $playstorexo; ?>"><i class="fa fa-android"></i> PlayStore</a>
 							<?php if($apk) : ?>
 								<a class="button-download button anchor" href="<?php echo $apk; ?>"><i class="fa fa-archive"></i> APK</a>
 							<?php endif; ?>
 						<?php else : ?>
-							<a class="button-download button anchor" href="#section-download"><i class="fa fa-download"></i> Download</a>
+							<a class="button-download button anchor" href="#section-download"><i class="fa fa-download"></i><?php _e('Free Download','hoccer'); ?></a>
 						<?php endif; ?>
 					</div>
 				</div>
@@ -139,7 +139,7 @@
 						<span><a class="button appstore"  href="<?php echo $appstorexo ?>" target="_blank"><i class="fa fa-apple"></i> AppStore</a></span>
 					<?php endif; ?>
 					<?php if($playstorexo) : ?>
-						<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank"><i class="fa fa-android"></i> Android</a></span>
+						<span><a class="button gplay"  href="<?php echo $playstorexo ?>" target="_blank"><i class="fa fa-android"></i> PlayStore</a></span>
 					<?php endif; ?>
 					<?php if($apk) : ?>
 						<span><a class="button apk"  href="<?php echo $apk ?>" target="_blank"><i class="fa fa-archive"></i> APK</a></span>
