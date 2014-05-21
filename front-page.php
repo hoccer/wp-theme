@@ -13,7 +13,7 @@
 			<div class="inner">
 				<div class="three-columns-two">
 					<div id="header-text" data-type="prlx" data-speed="0.500">
-						<h1 class="section-title"><?php _e('A secure messenger for simplified data sharing.','hoccer'); ?></h1>
+						<h1 class="section-title"><?php the_title(); ?></h1>
 						<?php if ($detect->isiOS() && $appstorexo) : ?>
 							<a class="button-download button anchor" href="<?php echo $appstorexo; ?>"><i class="fa fa-apple"></i> AppStore</a>
 						<?php elseif ($detect->isAndroidOS() && $playstorexo) : ?>
