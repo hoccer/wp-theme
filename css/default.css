@@ -183,7 +183,9 @@ input[type="checkbox"] {
 
 
 
-
+.text-red {
+	color: #e56950;
+}
 
 	/* ------------------------------ Shortcodes */
 
