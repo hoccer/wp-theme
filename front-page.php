@@ -77,7 +77,7 @@
 				<article class="article">
 					<div class="three-columns-one">
 						<div id="info-image" data-type="prlx" data-speed="0.375">
-							<img class="appicon" src="<?php echo $templatepath; ?>/images/appicon-hoccer-xo.png" alt="" />
+							<img class="appicon" src="<?php echo $templatepath; ?>/images/appicon.png" alt="" />
 						</div>
 					</div>
 					<div class="three-columns-two last">
