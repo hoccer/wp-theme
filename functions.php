@@ -200,7 +200,15 @@ function hoccer_button( $atts, $content = null ) {
 add_shortcode('button', 'hoccer_button');
 
 
-
+function add_upload_mime_types( $mimes ) {
+    if ( function_exists( 'current_user_can' ) )
+        $unfiltered = $user ? user_can( $user, 'unfiltered_html' ) : current_user_can( 'unfiltered_html' );
+    if ( !empty( $unfiltered ) ) {
+        $mimes['apk'] = 'application/vnd.android.package-archive';
+    }
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'add_upload_mime_types' );
 
 
 add_action('init', 'hoccer_register_features', 0);
