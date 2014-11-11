@@ -465,7 +465,7 @@ body {
 	border-radius: 8px 8px 0 0;
 }
 #section-header {
-	background: url('images/bg-header.png') no-repeat scroll center bottom / 100% auto #f7f7f7;
+	background: url('images/bg-header.png') no-repeat scroll center center / 100% auto #f7f7f7;
 }
 #section-header .inner {
 	padding-bottom: 1px;
