@@ -64,6 +64,8 @@
 		<link rel="dns-prefetch" href="https://img.youtube.com" />
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" media="screen" />
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/tutorial.css" media="screen" />
+		<link rel="icon" type="image/png" href="<?php bloginfo('template_url');?>/images/favicon.png">
+
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel='canonical' href='<?php bloginfo('url'); ?>' />
 		<link rel='index' title='<?php bloginfo('description'); ?>' href='<?php bloginfo('url'); ?>' />
