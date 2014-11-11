@@ -12,7 +12,7 @@
 		<section id="section-header" class="section">
 			<div class="inner">
 				<div class="three-columns-two">
-					<div id="header-text" data-type="prlx" data-speed="0.500">
+					<div id="header-text" data-type="prlx" data-speed="0.25">
 						<h1 class="section-title"><?php the_title(); ?></h1>
 						<?php if ($detect->isiOS() && $appstorexo) : ?>
 							<a class="button-download button anchor" href="<?php echo $appstorexo; ?>"><i class="fa fa-apple"></i> AppStore</a>
@@ -27,9 +27,9 @@
 					</div>
 				</div>
 				<div class="three-columns-one last">
-					<div id="header-image" data-type="prlx" data-speed="0.375"></div>
+					<div id="header-image" data-type="prlx" data-speed="0.75"></div>
 					
-					<div id="header-demo" data-type="prlx" data-speed="0.375">
+					<div id="header-demo" data-type="prlx" data-speed="0.75">
 						<div id="header-demo-canvas">
 							<div id="header-demo-image-wrapper">
 								<div id="header-demo-0" class="header-demo-image"></div>

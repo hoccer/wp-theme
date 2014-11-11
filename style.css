@@ -469,11 +469,18 @@ body {
 }
 #section-header .inner {
 	padding-bottom: 1px;
+	padding-top: 1px;
 	position: relative;
+}
+#section-header #header-text {
+	padding: 192px 64px 0 0;
+}
+#section-header .icon {
+	width: 128px;
 }
 #section-header .section-title {
 	margin: 0;
-	padding: 3em 1em 0 0;
+	padding: 0;
 	font-weight: 800;
 	font-size: 4em;
 	line-height: 1em;
@@ -513,10 +520,11 @@ body {
 	display: none;
 	position: absolute;
 	width: 30.6667%;
-	top: 10em;
+	top: 128px;
 	right: 32px;
 	-webkit-animation: fromright 1.5s;
 	animation: fromright 1.5s;
+
 }
 .csstransitions #header-demo {
 	display: block;

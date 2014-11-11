@@ -5,9 +5,13 @@ jQuery(function($) {
 			$('#section-header').css('min-height', viewport.height());
 		}
 		sectionListen();
-		viewport.resize(sectionListen);
-		viewport.bind('orientationchange', function() {
-			sectionListen();
+		viewport.on({
+			'resize': function() {
+				sectionListen();
+			},
+			'orientationchange': function() {
+				sectionListen();
+			}
 		});
 		
 		$('.flexslider').flexslider({
@@ -57,35 +61,40 @@ jQuery(function($) {
 	   Parallax
 	   ========================================================================== */
 
-	$(window).load(function() {
+	viewport.load(function() {
 		if($('html').hasClass('no-touch')) {
 			
-			$('[data-type]').each(function() {
-				$(this).data('speed', $(this).attr('data-speed'));
-			});
-			
-			$('[data-type="prlx"]').each(function() {
-				var self = $(this);
+			function prlx() {
+				
+				$('[data-type]').each(function() {
+					$(this).data('speed', $(this).attr('data-speed'));
+				});
+				
+				$('[data-type="prlx"]').each(function() {
+					var self = $(this);	
 
-	
-				function prlx() {
-					var viewport = $(window);
 					var topOffset = self.offset().top;
 					var yPos = (viewport.scrollTop() - topOffset) * self.data('speed');
 					self.css({
+						'-ms-transform' : 'translate(0px, ' + yPos + 'px)',
 						'-webkit-transform' : 'translate3d(0px, ' + yPos + 'px, 0px)',
 						'transform' : 'translate3d(0px, ' + yPos + 'px, 0px)'
 					});
+					
+				});
+			}
+			viewport.on({
+				'scroll': function() {
+					prlx();
+				},
+				'resize': function() {
+					prlx();
+				},
+				'orientationchange': function() {
+					prlx();
 				}
-				prlx();
-				viewport.on('scroll', function() {
-					prlx();
-				});
-				viewport.resize(prlx);
-				viewport.bind('orientationchange', function() {
-					prlx();
-				});
 			});
+			prlx();
 		}
 	});
 	
