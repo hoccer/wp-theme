@@ -137,7 +137,7 @@
 		<section id="section-download" class="section">
 			<div class="inner">
 				<div id="download-wrapper">
-					<h2 class="section-title"><?php _e('Start protecting your messages now!','hoccer'); ?></h2>
+					<h2 class="section-title"><?php _e('Chat anonymously, use Hoccer!','hoccer'); ?></h2>
 					<div class="clear"></div>
 					<?php if($appstorexo) : ?>									
 						<span><a class="button appstore"  href="<?php echo $appstorexo ?>" target="_blank"><i class="fa fa-apple"></i> AppStore</a></span>

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Hoccer v3\n"
+"Project-Id-Version: Hoccer v3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-05-21 14:24:51+0000\n"
+"PO-Revision-Date: 2014-11-11 22:50:32+0000\n"
 "Last-Translator: zutrinken <peter@hoccer.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -147,55 +147,45 @@ msgstr "iPhone mit Hoccer XO Screenshots"
 msgid "Save"
 msgstr "Speichern"
 
-#: front-page.php:16
-#@ hoccer
-msgid "A secure messenger for simplified data sharing."
-msgstr "Sicheres & anonymes Messaging."
-
-#: front-page.php:136
-#@ hoccer
-msgid "Start protecting your messages now!"
-msgstr "Schütze jetzt deine Nachrichten!"
-
-#: functions.php:211
-#: functions.php:213
+#: functions.php:219
+#: functions.php:221
 #@ hoccer
 msgid "Features"
 msgstr ""
 
-#: functions.php:214
+#: functions.php:222
 #@ hoccer
 msgid "Feature"
 msgstr ""
 
-#: functions.php:215
-#: functions.php:246
+#: functions.php:223
+#: functions.php:254
 #@ hoccer
 msgid "Add New"
 msgstr ""
 
-#: functions.php:216
+#: functions.php:224
 #@ hoccer
 msgid "Add New Feature"
 msgstr ""
 
-#: functions.php:217
-#: functions.php:248
+#: functions.php:225
+#: functions.php:256
 #@ hoccer
 msgid "Edit"
 msgstr ""
 
-#: functions.php:218
+#: functions.php:226
 #@ hoccer
 msgid "Edit Feature"
 msgstr ""
 
-#: functions.php:219
+#: functions.php:227
 #@ hoccer
 msgid "New Feature"
 msgstr ""
 
-#: functions.php:220
+#: functions.php:228
 #@ hoccer
 msgid "View Features"
 msgstr ""
@@ -205,33 +195,33 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: functions.php:242
-#: functions.php:244
+#: functions.php:250
+#: functions.php:252
 #@ hoccer
 msgid "Slides"
 msgstr ""
 
-#: functions.php:245
+#: functions.php:253
 #@ hoccer
 msgid "Slide"
 msgstr ""
 
-#: functions.php:247
+#: functions.php:255
 #@ hoccer
 msgid "Add New Slide"
 msgstr ""
 
-#: functions.php:249
+#: functions.php:257
 #@ hoccer
 msgid "Edit Slide"
 msgstr ""
 
-#: functions.php:250
+#: functions.php:258
 #@ hoccer
 msgid "New Slide"
 msgstr ""
 
-#: functions.php:251
+#: functions.php:259
 #@ hoccer
 msgid "View Slides"
 msgstr ""
@@ -246,8 +236,13 @@ msgstr ""
 msgid "Page not found."
 msgstr ""
 
-#: front-page.php:25
+#: front-page.php:29
 #@ hoccer
 msgid "Free Download"
 msgstr "Gratis Download"
+
+#: front-page.php:140
+#@ hoccer
+msgid "Chat anonymously, use Hoccer!"
+msgstr "Chatte anonym mit Hoccer!"
 
