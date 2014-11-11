@@ -497,8 +497,23 @@ body {
 	font-size: 4em;
 	line-height: 1em;
 	text-transform: uppercase;
-	color: #333;
+	color: #000;
 }
+#section-header .section-slogan {
+	font-weight: 600;
+	font-size: 1.25em;
+	padding: 0;
+	margin: 0.5em 0;
+	color: #4dbfac;
+}
+#section-header .section-description {
+	font-weight: 300;
+	font-size: 1.5em;
+	padding: 0;
+	margin: 1.5em 0;
+	color: #000;
+}
+
 #header-text {
 	-webkit-animation: fromleft 1.5s;
 	animation: fromleft 1.5s;
@@ -661,15 +676,43 @@ body {
 
 
 .button-download {
-	margin: 4em 0;
-	border: 2px solid #4dbfac;
-	color: #4dbfac;
-	background: #f7f7f7;
+	cursor: pointer;
+	color: #fff !important;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 1.25em;
+	line-height: 1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+	padding: 24px 28px;
+	
+	margin: 0 0 256px;
+	background: url('images/bg-button.png') no-repeat scroll center center / 100% 100% #4dbfac;
+	
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+
+	-webkit-transform: scale(1);
+	transform: scale(1);
+
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	
+	-webkit-transition-property: transform, background;
+	transition-property: transform, background;
+
+	-webkit-transition-timing-function: cubic-bezier(.5,1.75,.75,.75);
+	transition-timing-function: cubic-bezier(.5,1.75,.75,.75);
 }
 .button-download:hover,
 .button-download:focus {
-	background: #4dbfac;
-	color: #fff;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	background-size: 110% 110%;
+}
+.button-download i {
+	margin-right: 12px;
 }
 
 #section-header .section-next {

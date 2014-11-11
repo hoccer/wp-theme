@@ -9,6 +9,7 @@
 		
 		<?php $faq = get_post_meta($post->ID, 'faq', true); ?>
 		<?php $slogan = get_post_meta($post->ID, 'slogan', true); ?>
+		<?php $description = get_post_meta($post->ID, 'description', true); ?>
 
 		<section id="section-header" class="section">
 			<div class="inner">
@@ -16,15 +17,16 @@
 					<div id="header-text" data-type="prlx" data-speed="0.25">
 						<h2 class="section-title"><?php the_title(); ?></h2>
 						<h3 class="section-slogan"><?php echo $slogan; ?></h3>
+						<h4 class="section-description"><?php echo $description; ?></h4>
 						<?php if ($detect->isiOS() && $appstorexo) : ?>
 							<a class="button-download button anchor" href="<?php echo $appstorexo; ?>"><i class="fa fa-apple"></i> AppStore</a>
 						<?php elseif ($detect->isAndroidOS() && $playstorexo) : ?>
-							<a class="button-download button anchor" href="<?php echo $playstorexo; ?>"><i class="fa fa-android"></i> PlayStore</a>
+							<a class="button-download anchor" href="<?php echo $playstorexo; ?>"><i class="fa fa-android"></i> PlayStore</a>
 							<?php if($apk) : ?>
-								<a class="button-download button anchor" href="<?php echo $apk; ?>"><i class="fa fa-archive"></i> APK</a>
+								<a class="button-download anchor" href="<?php echo $apk; ?>"><i class="fa fa-archive"></i> APK</a>
 							<?php endif; ?>
 						<?php else : ?>
-							<a class="button-download button anchor" href="#section-download"><i class="fa fa-download"></i><?php _e('Free Download','hoccer'); ?></a>
+							<a class="button-download anchor" href="#section-download"><i class="fa fa-cloud-download"></i><?php _e('Free Download','hoccer'); ?></a>
 						<?php endif; ?>
 					</div>
 				</div>
