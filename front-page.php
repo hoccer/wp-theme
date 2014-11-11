@@ -8,12 +8,14 @@
 		<?php $apk = get_post_meta($post->ID, 'apkxo', true); ?>
 		
 		<?php $faq = get_post_meta($post->ID, 'faq', true); ?>
+		<?php $slogan = get_post_meta($post->ID, 'slogan', true); ?>
 
 		<section id="section-header" class="section">
 			<div class="inner">
 				<div class="three-columns-two">
 					<div id="header-text" data-type="prlx" data-speed="0.25">
-						<h1 class="section-title"><?php the_title(); ?></h1>
+						<h2 class="section-title"><?php the_title(); ?></h2>
+						<h3 class="section-slogan"><?php echo $slogan; ?></h3>
 						<?php if ($detect->isiOS() && $appstorexo) : ?>
 							<a class="button-download button anchor" href="<?php echo $appstorexo; ?>"><i class="fa fa-apple"></i> AppStore</a>
 						<?php elseif ($detect->isAndroidOS() && $playstorexo) : ?>

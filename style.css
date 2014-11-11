@@ -282,11 +282,23 @@ body {
 	display: block;
 	height: 2em;
 	padding: 1em 0;
+	font-size: 1em;
+	margin: 0;
 }
 #logo img {
 	display: block;
 	height: 100%;
 	width: auto;
+	position: relative;
+	float: left;
+}
+#logo .icon {
+	height: 140%;
+	top: -20%;
+	margin-right: 14px;
+}
+#logo .name {
+	
 }
 
 
@@ -473,7 +485,7 @@ body {
 	position: relative;
 }
 #section-header #header-text {
-	padding: 192px 64px 0 0;
+	padding: 256px 64px 0 0;
 }
 #section-header .icon {
 	width: 128px;
@@ -950,13 +962,9 @@ body {
 
 	
 	#logo {
-		max-width: 62.5%;
 		float: none;
 		margin: auto;
 		text-align: center;
-	}
-	#logo img {
-		margin: auto;
 	}
 	#main-nav {
 		float: left;
@@ -1000,16 +1008,18 @@ body {
 		position: static;
 		font-size: 1em;
 	}
+	#section-header {
+		background-size: 200% auto;
+	}
 	#section-header .inner {
 		padding-left: 0;
 		padding-right: 0;
 	}
 	#section-header .section-title {
-		margin: 0;
-		padding: 4em 0 0;
 		font-size: 2em;
 	}
-	#header-text {
+	#section-header #header-text {
+		padding-right: 0;
 		text-align: center;
 		-webkit-animation: 0;
 		animation: 0;

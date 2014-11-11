@@ -73,9 +73,12 @@
 	<body <?php body_class(); ?>>
 		<div id="header">
 			<header class="inner">
-				<a id="logo" href="<?php bloginfo('url'); ?>">
-					<img alt="<?php bloginfo('name'); ?>" src="<?php bloginfo('template_url'); ?>/images/logo.svg" />
-				</a>
+				<h1 id="logo">
+					<a href="<?php bloginfo('url'); ?>">
+						<img class="icon" alt="" src="<?php bloginfo('template_url'); ?>/images/icon.png" alt="" />
+						<img class="name" alt="<?php bloginfo('name'); ?>" src="<?php bloginfo('template_url'); ?>/images/logo.svg" />
+					</a>
+				</h1>
 				<nav id="languages">
 					<?php /* do_action('icl_language_selector'); */ ?>
 					<?php language_selector_custom(); ?>
