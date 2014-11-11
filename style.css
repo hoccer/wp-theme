@@ -532,7 +532,7 @@ body {
 	min-width: 320px;
 	height: 100%;
 	right: 32px;
-	top: 10em;
+	top: 128px;
 	background: url('images/xo-iphone.png') no-repeat scroll center bottom / contain transparent;
 	-webkit-animation: fromright 1.5s;
 	animation: fromright 1.5s;
@@ -547,11 +547,10 @@ body {
 	display: none;
 	position: absolute;
 	width: 30.6667%;
-	top: 192px;
+	top: 128px;
 	right: 32px;
 	-webkit-animation: fromright 1.5s;
 	animation: fromright 1.5s;
-
 }
 .csstransitions #header-demo {
 	display: block;
