@@ -352,7 +352,8 @@ body {
 
 
 #header-teaser {
-	background: scroll repeat-x center top / cover #4dbfac;
+/* 	background: scroll repeat-x center top / cover #4dbfac; */
+	background: url('images/bg-download.png') no-repeat scroll center center / cover #4dbfac;
 	overflow: hidden;
 	margin: 0 auto;
 	padding: 12% 0 8%;
@@ -464,7 +465,7 @@ body {
 	border-radius: 8px 8px 0 0;
 }
 #section-header {
-	background: #f7f7f7;
+	background: url('images/bg-header.png') no-repeat scroll center bottom / 100% auto #f7f7f7;
 }
 #section-header .inner {
 	padding-bottom: 1px;
@@ -643,6 +644,7 @@ body {
 	margin: 4em 0;
 	border: 2px solid #4dbfac;
 	color: #4dbfac;
+	background: #f7f7f7;
 }
 .button-download:hover,
 .button-download:focus {
@@ -840,7 +842,7 @@ body {
 	/* ======================== Download */
 
 #section-download {
-	background: #4dbfac;
+	background: url('images/bg-download.png') no-repeat scroll center center / cover #4dbfac;
 	text-align: center;
 }
 #section-download .inner {
