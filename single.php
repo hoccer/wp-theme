@@ -2,7 +2,7 @@
 		<div id="header-teaser">
 			<div id="header-teaser-outside">
 				<div id="header-teaser-inside" class="inner">
-					<a class="post-back" href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
+					<a class="post-back" href="<?php echo icl_get_home_url(); ?>/blog/"><i class="fa fa-chevron-left"></i></a>
 					<h1 class="post-title"><?php the_title(); ?></h1>
 					<time class="post-meta">
 						<?php the_time('d.m.y'); ?>
