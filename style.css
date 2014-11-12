@@ -597,6 +597,11 @@ body {
 	animation-duration: 6s;
 }
 #header-demo-0 {
+	background-image: url('images/demo-nearby.png');
+	opacity: inherit !important;
+}
+/*
+#header-demo-0 {
 	background-image: url('images/demo-0.png');
 	opacity: inherit !important;
 }
@@ -670,6 +675,7 @@ body {
   95%   { opacity: 0; }
   100% { opacity: 1; }
 }
+*/
 
 
 
