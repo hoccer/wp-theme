@@ -13,8 +13,11 @@
 
 		<section id="section-header" class="section">
 			<div class="inner">
-				<div class="three-columns-two">
-					<div id="header-text" data-type="" data-speed="0.25">
+				<div class="two-columns-one">
+					<p><!-- --></p>
+				</div>
+				<div class="two-columns-one last">
+					<div id="header-text">
 						<h2 class="section-title"><?php the_title(); ?></h2>
 						<h3 class="section-slogan"><?php echo $slogan; ?></h3>
 						<h4 class="section-description"><?php echo $description; ?></h4>
@@ -28,22 +31,6 @@
 						<?php else : ?>
 							<a class="button-download anchor" href="#section-download"><i class="fa fa-cloud-download"></i><?php _e('Free Download','hoccer'); ?></a>
 						<?php endif; ?>
-					</div>
-				</div>
-				<div class="three-columns-one last">
-					<div id="header-image" data-type="" data-speed="0.75"></div>
-					
-					<div id="header-demo" data-type="" data-speed="0.75">
-						<div id="header-demo-canvas">
-							<div id="header-demo-image-wrapper">
-								<div id="header-demo-0" class="header-demo-image"></div>
-								<div id="header-demo-1" class="header-demo-image"></div>
-								<div id="header-demo-2" class="header-demo-image"></div>
-								<div id="header-demo-3" class="header-demo-image"></div>
-								<div id="header-demo-4" class="header-demo-image"></div>
-								<div id="header-demo-5" class="header-demo-image"></div>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="divider"></div>
