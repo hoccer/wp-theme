@@ -35,7 +35,8 @@
 				</div>
 				<div class="divider"></div>
 			</div>
-			<a class="section-next anchor" href="#section-features"><i class="fa fa-chevron-down"></i></a>
+			<a class="scrollinfo"><i class="fa fa-chevron-down"></i></a>
+			<div class="section-background" data-type="prlx" data-speed="0.1"></div>
 		</section>
 		
 		<section id="section-features" class="section">
@@ -56,28 +57,9 @@
 						<figure class="feature-image"><?php echo get_post_meta($post->ID, 'feature_icon', true); ?></figure>
 						<h3 class="feature-title"><?php the_title(); ?></h3>
 						<div class="feature-text"><?php the_excerpt(); ?></div>
-					</div>	
+					</div>
 				<?php endwhile; wp_reset_query(); ?> 
 				<div class="clear"></div>
-				<center><a id="button-faq" class="button button-dark button-faq" href="<?php echo $faq ?>"><i class="fa fa-lightbulb-o"></i> FAQ</a></center>
-			</div>
-		</section>
-		
-		<section id="section-info" class="section">
-			<div class="inner">
-				<article class="article">
-					<div class="three-columns-one">
-						<div id="info-image" data-type="prlx" data-speed="0.375">
-							<img class="appicon" src="<?php echo $templatepath; ?>/images/appicon.png" alt="" />
-						</div>
-					</div>
-					<div class="three-columns-two last">
-						<div id="info-text" data-type="prlx" data-speed="0.250">
-							<?php the_content(); ?>
-						</div>
-					</div>
-					<div class="divider"></div>
-				</article>
 			</div>
 		</section>
 		
@@ -118,6 +100,24 @@
 					</li>
 					<?php endwhile; wp_reset_query(); ?> 
 				</ul>
+			</div>
+		</section>
+		
+		<section id="section-info" class="section">
+			<div class="inner">
+				<article class="article">
+					<div class="three-columns-one">
+						<div id="info-image" data-type="prlx" data-speed="0.2">
+							<img class="appicon" src="<?php echo $templatepath; ?>/images/appicon.png" alt="" />
+						</div>
+					</div>
+					<div class="three-columns-two last">
+						<div id="info-text">
+							<?php the_content(); ?>
+						</div>
+					</div>
+					<div class="divider"></div>
+				</article>
 			</div>
 		</section>
 		

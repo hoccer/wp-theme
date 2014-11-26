@@ -11,7 +11,7 @@ include 'inc/mobile_detect.php';
 
 add_action('wp_enqueue_scripts', 'hoccer_fonts');
 function hoccer_fonts() {
-	wp_register_style('oblivion-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300,600,400italic,700italic|Inconsolata:400|Vollkorn:400,400italic,700italic');
+	wp_register_style('oblivion-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,400italic,700italic|Inconsolata:400|Vollkorn:400,400italic,700italic');
 	wp_enqueue_style('oblivion-fonts');
 }
 
