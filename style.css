@@ -3,7 +3,7 @@
 	Theme URI: http://www.hoccer.com/
 
 	Description: The Theme is written by <a href="http://zutrinken.com/">Peter Amende</a>
-	Version: 3.1
+	Version: 3.1.1
 
 	Author: Peter Amende
 	Author URI: http://zutrinken.com/
@@ -607,7 +607,8 @@ body {
 }
 .feature-2,
 .feature-4,
-.feature-6 {
+.feature-6,
+.feature-8 {
 	margin-right: 0;
 }
 .feature-image {
@@ -624,22 +625,28 @@ body {
 	cursor: default;
 }
 .feature:nth-child(1) .feature-image {
-	color: #e52e4c;
+	color: #F23D6A;
 }
 .feature:nth-child(2) .feature-image {
-	color: #aad94c;
+	color: #58BF43;
 }
 .feature:nth-child(3) .feature-image {
-	color: #ff6a00;
+	color: #FF6A00;
 }
 .feature:nth-child(4) .feature-image {
-	color: #60bf9f;
+	color: #52CCB8;
 }
 .feature:nth-child(5) .feature-image {
-	color: #ffdf40;
+	color: #FFDD33;
 }
 .feature:nth-child(6) .feature-image {
-	color: #007fbf;
+	color: #1677D9;
+}
+.feature:nth-child(7) .feature-image {
+	color: #C7D900;
+}
+.feature:nth-child(8) .feature-image {
+	color: #9933FF;
 }
 
 .feature-title {
