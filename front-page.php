@@ -10,6 +10,8 @@
 		<?php $faq = get_post_meta($post->ID, 'faq', true); ?>
 		<?php $slogan = get_post_meta($post->ID, 'slogan', true); ?>
 		<?php $description = get_post_meta($post->ID, 'description', true); ?>
+		
+		<?php $awards = get_post_meta($post->ID, 'awards', true); ?>
 
 		<section id="section-header" class="section">
 			<div class="inner">
@@ -30,6 +32,9 @@
 							<?php endif; ?>
 						<?php else : ?>
 							<a class="button-download anchor" href="#section-download"><i class="fa fa-cloud-download"></i><?php _e('Free Download','hoccer'); ?></a>
+						<?php endif; ?>
+						<?php if($awards) : ?>									
+							<div class="section-awards"><?php echo $awards ?></div>
 						<?php endif; ?>
 					</div>
 				</div>
